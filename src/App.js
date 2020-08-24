@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./components/Home";
 import Education from "./components/Education";
+import Skills from "./components/Skills";
 import PortfolioNavbar from "./components/Navbar";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <PortfolioNavbar />
       <Home />
       <Education />
+      <Skills />
     </div>
   );
 }

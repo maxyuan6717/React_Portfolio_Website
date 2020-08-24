@@ -6,7 +6,6 @@
 
 .section_header {
   font-size: 20px;
-  font-weight: 500;
   color: #3273dc;
 }
 
@@ -23,9 +22,49 @@
 }
 
 .course {
-  background-color: rgb(223, 223, 223);
   color: rgb(65, 65, 65);
   border-radius: 10px;
   padding: 6px;
   font-size: 11px;
+}
+
+.course:hover {
+  cursor: pointer;
+}
+
+.activities {
+  background-color: rgb(223, 223, 223);
+}
+
+.activities:hover {
+  cursor: inherit;
+}
+
+.taken {
+  /* background-color: rgb(195, 238, 195); */
+  background-color: rgb(223, 223, 223);
+}
+
+.taken:hover {
+  /* background-color: rgb(147, 226, 147); */
+  background-color: rgb(202, 202, 202);
+}
+
+.taking {
+  /* background-color: rgb(241, 222, 199); */
+  background-color: rgb(223, 223, 223);
+}
+
+.taking:hover {
+  /* background-color: rgb(238, 202, 159); */
+  background-color: rgb(202, 202, 202);
+}
+
+.legend {
+  font-size: 14px;
+}
+
+.legend_bubble {
+  padding: 1px 4px;
+  border-radius: 10px;
 }

@@ -46,7 +46,7 @@ function Home() {
                 height={80}
               />
             </div>
-            <Row className={styles.description + " mx-auto"}>
+            <Row className={styles.description + " mx-auto pt-2"}>
               I do&nbsp;
               <TypistLoop interval={500}>
                 {["Web Development", "Competitive Programming", "Robotics"].map(
