@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Home.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
@@ -16,8 +16,8 @@ function Home() {
   return (
     <Col className={styles.container + " p-0 mx-auto"}>
       <FadeInSection>
-        <Row className={styles.home_content}>
-          <Col md={8}>
+        <Row className={styles.home_content + " mx-auto"}>
+          <Col md={8} className="p-0">
             {/* <h1 className={styles.header}>MAX YUAN</h1> */}
             <div className={styles.particle_name}>
               <ParticleImage
@@ -63,7 +63,8 @@ function Home() {
             <Row className={styles.email + " mx-auto py-3"}>
               <div>
                 Hi, I'm a sophomore studying CS/Econ at Yale. If you want to
-                connect, chat, or collaborate on a project, hit me up at&nbsp;
+                connect, chat, or collaborate on a project, reach out to me
+                at&nbsp;
                 <span className={styles.highlight_link}>max.yuan@yale.edu</span>
               </div>
             </Row>

@@ -1,0 +1,31 @@
+.container {
+  max-width: 720px !important;
+  margin-top: 25px;
+  margin-bottom: 250px;
+}
+
+.section_header {
+  font-size: 20px;
+  font-weight: 500;
+  color: #3273dc;
+}
+
+.school_name {
+  font-size: 18px;
+}
+
+.degree {
+  color: grey;
+}
+
+.coursework {
+  border-bottom: 1px solid black;
+}
+
+.course {
+  background-color: rgb(223, 223, 223);
+  color: rgb(65, 65, 65);
+  border-radius: 10px;
+  padding: 6px;
+  font-size: 11px;
+}
