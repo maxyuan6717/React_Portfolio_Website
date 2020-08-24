@@ -5,30 +5,6 @@ import FadeInSection from "./FadeInSection";
 import ProgressCircleContainer from "./ProgressCircleContainer";
 
 function Skills() {
-  var options = {
-    strokeWidth: 4,
-    color: "#3273dc",
-    trailColor: "#f4f4f4",
-    text: {
-      style: {
-        fontSize: "13px",
-        color: "black",
-        position: "absolute",
-        left: "50%",
-        top: "50%",
-        padding: 0,
-        margin: 0,
-        transform: {
-          prefix: true,
-          value: "translate(-50%, -50%)",
-        },
-      },
-    },
-  };
-
-  // For demo purposes so the container has some dimensions.
-  // Otherwise progress bar won't be shown
-
   return (
     <Col className={styles.container + " p-0 mx-auto"}>
       <Row className={styles.education_content + " mx-auto flex-row-reverse"}>
