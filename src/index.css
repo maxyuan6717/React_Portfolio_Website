@@ -25,3 +25,11 @@ code {
 * {
   font-family: "Open Sans", sans-serif;
 }
+
+.technology {
+  border: 1px solid #3273dc;
+  padding: 5px;
+  color: #3273dc;
+  font-size: 11px;
+  border-radius: 5px;
+}

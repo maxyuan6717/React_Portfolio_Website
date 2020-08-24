@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Skills.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
-import ProgressCircleContainer from "./ProgressCircleContainer";
+import ProgCircle from "./ProgCircle";
 
 function Skills() {
   return (
@@ -21,16 +21,16 @@ function Skills() {
             </span>
           </Row>
           <Row className="mx-auto my-4">
-            <ProgressCircleContainer progress={0.9} text={"C/C++"} />
-            <ProgressCircleContainer progress={0.87} text={"Python"} />
-            <ProgressCircleContainer progress={0.85} text={"JavaScript"} />
-            <ProgressCircleContainer progress={0.85} text={"HTML/CSS"} />
+            <ProgCircle progress={0.9} text={"C/C++"} indx={0} />
+            <ProgCircle progress={0.87} text={"Python"} indx={0} />
+            <ProgCircle progress={0.85} text={"JavaScript"} indx={0} />
+            <ProgCircle progress={0.85} text={"HTML/CSS"} indx={0} />
           </Row>
           <Row className="mx-auto my-4">
-            <ProgressCircleContainer progress={0.7} text={"Java"} />
-            <ProgressCircleContainer progress={0.65} text={"TypeScript"} />
-            <ProgressCircleContainer progress={0.6} text={"SQL"} />
-            <ProgressCircleContainer progress={0.55} text={"Swift"} />
+            <ProgCircle progress={0.7} text={"Java"} indx={0} />
+            <ProgCircle progress={0.65} text={"TypeScript"} indx={0} />
+            <ProgCircle progress={0.6} text={"SQL"} indx={0} />
+            <ProgCircle progress={0.55} text={"Swift"} indx={0} />
           </Row>
           <Row className="mx-auto mt-4">
             <span className={styles.skills_header + " mx-auto"}>
@@ -38,10 +38,10 @@ function Skills() {
             </span>
           </Row>
           <Row className="mx-auto my-4">
-            <ProgressCircleContainer progress={0.85} text={"ReactJS"} />
-            <ProgressCircleContainer progress={0.85} text={"Bootstrap"} />
-            <ProgressCircleContainer progress={0.65} text={"jQuery"} />
-            <ProgressCircleContainer progress={0.55} text={"UmiJS"} />
+            <ProgCircle progress={0.85} text={"ReactJS"} indx={1} />
+            <ProgCircle progress={0.85} text={"Bootstrap"} indx={1} />
+            <ProgCircle progress={0.65} text={"jQuery"} indx={1} />
+            <ProgCircle progress={0.55} text={"UmiJS"} indx={1} />
           </Row>
           <Row className="mx-auto mt-4">
             <span className={styles.skills_header + " mx-auto"}>
@@ -49,10 +49,10 @@ function Skills() {
             </span>
           </Row>
           <Row className="mx-auto my-4">
-            <ProgressCircleContainer progress={0.9} text={"Git"} />
-            <ProgressCircleContainer progress={0.9} text={"REST API"} />
-            <ProgressCircleContainer progress={0.75} text={"AWS"} />
-            <ProgressCircleContainer progress={0.65} text={"Docker"} />
+            <ProgCircle progress={0.9} text={"Git"} indx={2} />
+            <ProgCircle progress={0.9} text={"REST API"} indx={2} />
+            <ProgCircle progress={0.75} text={"AWS"} indx={2} />
+            <ProgCircle progress={0.65} text={"Docker"} indx={2} />
           </Row>
         </Col>
       </Row>
