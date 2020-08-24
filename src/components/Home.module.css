@@ -1,0 +1,65 @@
+.container {
+  max-width: 700px !important;
+  height: calc(100vh - 54px);
+}
+
+.home_content {
+  padding-top: 23vh;
+}
+
+.description {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+
+.typist_text {
+  color: #ff6464;
+}
+
+.social_btn {
+  transition: 0.3s;
+  color: rgb(29, 29, 29);
+}
+
+.social_btn:hover {
+  cursor: pointer;
+  transform: translateY(-6px);
+}
+
+.github:hover {
+  color: rgb(114, 1, 114);
+}
+
+.linkedin:hover {
+  color: rgb(0, 140, 255);
+}
+
+.resume:hover {
+  color: rgb(202, 0, 0);
+}
+
+.email {
+  font-size: 20px;
+}
+
+.highlight_link {
+  color: #3273dc;
+  /* display: inline; */
+  /* display: inline-block; */
+  padding: 0px 2px;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: inset 0 -5px 0 rgba(50, 115, 220, 0.2);
+  line-height: 1.5;
+}
+
+.highlight_link:hover {
+  cursor: pointer;
+  box-shadow: inset 0 -55px 0 0 rgba(50, 115, 220, 0.2);
+}
+
+.avatar {
+  border-radius: 100%;
+}
