@@ -1,16 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Home from "./components/Home";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 import PortfolioNavbar from "./components/Navbar";
+import { Element, scroller } from "react-scroll";
 
 function App() {
+  const [scroll, setScroll] = useState("");
+
+  useEffect(() => {
+    let offset;
+    if (scroll === "education") offset = -150;
+    else if (scroll === "skills") offset = -50;
+    scroller.scrollTo(scroll, {
+      smooth: true,
+      duration: 500,
+      offset: offset,
+    });
+    if (scroll != "") setScroll("");
+  }, [scroll]);
+
   return (
     <div id="base">
-      <PortfolioNavbar />
+      <PortfolioNavbar setScroll={setScroll} />
       <Home />
-      <Education />
-      <Skills />
+      <Element name="education">
+        <Education />
+      </Element>
+      <Element name="skills">
+        <Skills />
+      </Element>
+      <Element name="experience">
+        <Experience />
+      </Element>
     </div>
   );
 }

@@ -23,8 +23,8 @@ function Skills() {
           <Row className="mx-auto my-4">
             <ProgressCircleContainer progress={0.9} text={"C/C++"} />
             <ProgressCircleContainer progress={0.87} text={"Python"} />
-            <ProgressCircleContainer progress={0.8} text={"JavaScript"} />
-            <ProgressCircleContainer progress={0.8} text={"HTML/CSS"} />
+            <ProgressCircleContainer progress={0.85} text={"JavaScript"} />
+            <ProgressCircleContainer progress={0.85} text={"HTML/CSS"} />
           </Row>
           <Row className="mx-auto my-4">
             <ProgressCircleContainer progress={0.7} text={"Java"} />
@@ -40,8 +40,8 @@ function Skills() {
           <Row className="mx-auto my-4">
             <ProgressCircleContainer progress={0.85} text={"ReactJS"} />
             <ProgressCircleContainer progress={0.85} text={"Bootstrap"} />
-            <ProgressCircleContainer progress={0.8} text={"Apollo Client"} />
             <ProgressCircleContainer progress={0.65} text={"jQuery"} />
+            <ProgressCircleContainer progress={0.55} text={"UmiJS"} />
           </Row>
           <Row className="mx-auto mt-4">
             <span className={styles.skills_header + " mx-auto"}>

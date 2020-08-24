@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
 
-function PortfolioNavbar() {
+function PortfolioNavbar({ setScroll }) {
   const [nav_expanded, setExpand] = useState(false);
 
   return (
@@ -25,10 +25,30 @@ function PortfolioNavbar() {
                 className="justify-content-end"
               >
                 <Nav onClick={() => setExpand(false)}>
-                  <div className={styles.navbar_links}>Education</div>
-                  <div className={styles.navbar_links}>Skills</div>
-                  <div className={styles.navbar_links}>Experience</div>
-                  <div className={styles.navbar_links}>Projects</div>
+                  <div
+                    className={styles.navbar_links}
+                    onClick={() => setScroll("education")}
+                  >
+                    Education
+                  </div>
+                  <div
+                    className={styles.navbar_links}
+                    onClick={() => setScroll("skills")}
+                  >
+                    Skills
+                  </div>
+                  <div
+                    className={styles.navbar_links}
+                    onClick={() => setScroll("experience")}
+                  >
+                    Experience
+                  </div>
+                  <div
+                    className={styles.navbar_links}
+                    onClick={() => setScroll("projects")}
+                  >
+                    Projects
+                  </div>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
