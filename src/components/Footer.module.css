@@ -28,22 +28,26 @@
   display: block;
 }
 
-.email {
+.email,
+.email:hover {
   border-color: rgb(31, 160, 49);
   color: rgb(31, 160, 49);
 }
 
-.github {
+.github,
+.github:hover {
   border-color: rgb(114, 1, 114);
   color: rgb(114, 1, 114);
 }
 
-.linkedin {
+.linkedin,
+.linkedin:hover {
   border-color: rgb(0, 140, 255);
   color: rgb(0, 140, 255);
 }
 
-.resume {
+.resume,
+.resume:hover {
   border-color: rgb(202, 0, 0);
   color: rgb(202, 0, 0);
 }

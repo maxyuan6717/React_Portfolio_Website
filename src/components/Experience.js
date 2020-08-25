@@ -7,7 +7,7 @@ function Experience() {
   return (
     <Col className={styles.container + " p-0 mx-auto"}>
       <Row className={styles.experience_content + " mx-auto"}>
-        <Col md={3} className={styles.section_header + " p-0"}>
+        <Col md={3} className={"section_header p-0"}>
           <FadeInSection>EXPERIENCE</FadeInSection>
         </Col>
         <Col md={9} className="p-0">

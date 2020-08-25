@@ -16,6 +16,7 @@ function App() {
     if (scroll === "education") offset = -150;
     else if (scroll === "skills") offset = -50;
     else if (scroll === "experience") offset = -150;
+    else if (scroll === "projects") offset = -50;
     scroller.scrollTo(scroll, {
       smooth: true,
       duration: 500,

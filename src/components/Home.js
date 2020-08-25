@@ -65,7 +65,12 @@ function Home() {
                 Hi, I'm a sophomore studying CS/Econ at Yale. If you want to
                 connect, chat, or collaborate on a project, reach out to me
                 at&nbsp;
-                <span className={styles.highlight_link}>max.yuan@yale.edu</span>
+                <a
+                  href="mailto: max.yuan@yale.edu"
+                  className={styles.highlight_link}
+                >
+                  max.yuan@yale.edu
+                </a>
               </div>
             </Row>
             <Row className="mx-auto">

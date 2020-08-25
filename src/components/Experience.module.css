@@ -4,13 +4,7 @@
   margin-bottom: 250px;
 }
 
-.section_header {
-  font-size: 20px;
-  color: #3273dc;
-}
-
 .experience_col {
-  /* padding-left: 6px !important; */
   border-left: 1px solid rgba(0, 0, 0, 0.26);
 }
 

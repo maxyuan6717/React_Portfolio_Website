@@ -7,11 +7,9 @@ import ProgCircle from "./ProgCircle";
 function Projects() {
   return (
     <Col className={styles.container + " p-0 mx-auto"}>
-      <Row className={" mx-auto flex-row-reverse"}>
-        <Col md={3} className={styles.section_header + " p-0 d-flex"}>
-          <span className="ml-auto">
-            <FadeInSection>Projects</FadeInSection>
-          </span>
+      <Row className={" mx-auto"}>
+        <Col md={3} className={"section_header p-0 d-flex"}>
+          <FadeInSection>PROJECTS</FadeInSection>
         </Col>
         <Col md={9} className="p-0">
           <FadeInSection>

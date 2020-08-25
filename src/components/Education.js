@@ -8,7 +8,7 @@ function Education() {
     <Col className={styles.container + " p-0 mx-auto"}>
       <FadeInSection>
         <Row className={styles.education_content + " mx-auto"}>
-          <Col md={3} className={styles.section_header + " p-0"}>
+          <Col md={3} className={"section_header p-0"}>
             EDUCATION
           </Col>
           <Col md={9} className="p-0">
@@ -34,15 +34,6 @@ function Education() {
             </Row>
             <Row className={"pt-2 mx-auto justify-content-between"}>
               <span className={styles.coursework}>Relevant Coursework</span>
-              {/* <div className={styles.legend}>
-                <span className={styles.taken + " " + styles.legend_bubble}>
-                  taken
-                </span>{" "}
-                |{" "}
-                <span className={styles.taking + " " + styles.legend_bubble}>
-                  taking
-                </span>
-              </div> */}
             </Row>
             <Row className={"mx-auto my-2 pl-0 "}>
               <span className={styles.course + " mr-1 "}>Data Structures</span>

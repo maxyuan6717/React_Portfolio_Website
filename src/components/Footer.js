@@ -15,18 +15,29 @@ function Footer() {
     <Col className={styles.container + " p-0 mx-auto"}>
       <FadeInSection>
         <Row className="mx-auto justify-content-center">
-          <div className={styles.social_btn + " mx-2 " + styles.email}>
+          <a
+            href="mailto: max.yuan@yale.edu"
+            className={styles.social_btn + " mx-2 " + styles.email}
+          >
             <FaEnvelopeOpenText
               size={btn_size}
               className={styles.social_icon}
             />
-          </div>
-          <div className={styles.social_btn + " mx-2 " + styles.github}>
+          </a>
+          <a
+            href="https://github.com/maxyuan6717"
+            target="_blank"
+            className={styles.social_btn + " mx-2 " + styles.github}
+          >
             <FaGithubAlt size={btn_size} className={styles.social_icon} />
-          </div>
-          <div className={styles.social_btn + " mx-2 " + styles.linkedin}>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/max-yuan-209930194/"
+            target="_blank"
+            className={styles.social_btn + " mx-2 " + styles.linkedin}
+          >
             <FaLinkedinIn size={btn_size} className={styles.social_icon} />
-          </div>
+          </a>
           <div className={styles.social_btn + " mx-2 " + styles.resume}>
             <FaRegFilePdf size={btn_size} className={styles.social_icon} />
           </div>
