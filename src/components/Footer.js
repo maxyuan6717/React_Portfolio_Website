@@ -27,6 +27,7 @@ function Footer() {
           <a
             href="https://github.com/maxyuan6717"
             target="_blank"
+            rel="noopener noreferrer"
             className={styles.social_btn + " mx-2 " + styles.github}
           >
             <FaGithubAlt size={btn_size} className={styles.social_icon} />
@@ -34,6 +35,7 @@ function Footer() {
           <a
             href="https://www.linkedin.com/in/max-yuan-209930194/"
             target="_blank"
+            rel="noopener noreferrer"
             className={styles.social_btn + " mx-2 " + styles.linkedin}
           >
             <FaLinkedinIn size={btn_size} className={styles.social_icon} />

@@ -77,6 +77,7 @@ function Home() {
               <a
                 href="https://github.com/maxyuan6717"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.social_btn + " pr-2 py-2 " + styles.github}
                 title="Github"
               >
@@ -85,6 +86,7 @@ function Home() {
               <a
                 href="https://www.linkedin.com/in/max-yuan-209930194/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.social_btn + " p-2 " + styles.linkedin}
                 title="LinkedIn"
               >
@@ -94,6 +96,7 @@ function Home() {
                 // href={resume}
                 href=""
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.social_btn + " pl-2 py-2 " + styles.resume}
                 title="Resume"
               >

@@ -18,7 +18,14 @@ function Projects() {
                 styles.project_name + " mx-auto justify-content-between"
               }
             >
-              CourseTable
+              <a
+                href="https://github.com/coursetable/coursetable/tree/redesign"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.highlight_link + " " + styles.github_link}
+              >
+                CourseTable
+              </a>
             </Row>
             <Row className={styles.description + " mx-auto my-2"}>
               Collaborating with 10 other members to maintain CourseTable, an
@@ -44,8 +51,16 @@ function Projects() {
                 styles.project_name + " mx-auto justify-content-between mt-4"
               }
             >
-              React Portfolio Website
+              <a
+                href="https://github.com/maxyuan6717/React_Portfolio_Website"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.highlight_link + " " + styles.github_link}
+              >
+                React Portfolio Website
+              </a>
             </Row>
+
             <Row className={styles.description + " mx-auto my-2"}>
               I built this portfolio website from scratch using ReactJS,
               HTML/CSS, and Bootstrap. CI/CD is implemented through Github
@@ -64,7 +79,14 @@ function Projects() {
                 styles.project_name + " mx-auto justify-content-between mt-4"
               }
             >
-              GoodWork
+              <a
+                href="https://github.com/maxyuan6717/GoodWork"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.highlight_link + " " + styles.github_link}
+              >
+                GoodWork
+              </a>
             </Row>
             <Row className={styles.description + " mx-auto my-2"}>
               Collaborated with one other developer to build GoodWork, an
@@ -89,7 +111,14 @@ function Projects() {
                 styles.project_name + " mx-auto justify-content-between mt-4"
               }
             >
-              Competitive Programming
+              <a
+                href="https://github.com/maxyuan6717/Competitive_Programming"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.highlight_link + " " + styles.github_link}
+              >
+                Competitive Programming
+              </a>
             </Row>
             <Row className={styles.description + " mx-auto my-2"}>
               Over the course of 3 years, I learned and drilled various data
@@ -109,12 +138,40 @@ function Projects() {
                 styles.project_name + " mx-auto justify-content-between mt-4"
               }
             >
-              6 DOF Robot Arm
+              <a
+                href="https://github.com/maxyuan6717/6_DOF_Robot_Arm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.highlight_link + " " + styles.github_link}
+              >
+                6 DOF Robot Arm
+              </a>
             </Row>
             <Row className={styles.description + " mx-auto my-2"}>
-              I designed, built, wired, and programmed a 6 DOF robot arm from
-              scratch. The robot arm mimics the movements of a smaller replica
-              arm and can be programmed to repeat a sequence of movements.
+              <span>
+                I designed, built, wired, and programmed a 6 DOF robot arm from
+                scratch. The robot arm mimics the movements of a smaller
+                controller arm and can be programmed to repeat a sequence of
+                movements. I document the process in these 2 YouTube videos:
+                <a
+                  href="https://www.youtube.com/watch?v=5SvWvZu7d08"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={
+                    styles.highlight_link + " mx-2 " + styles.youtube_link
+                  }
+                >
+                  Part 1
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=AhtPY5MsmAo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.highlight_link + " " + styles.youtube_link}
+                >
+                  Part 2
+                </a>
+              </span>
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-1"}>CAD Modeling</div>
