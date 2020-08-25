@@ -22,7 +22,7 @@ function App() {
       duration: 500,
       offset: offset,
     });
-    if (scroll != "") setScroll("");
+    if (scroll !== "") setScroll("");
   }, [scroll]);
 
   return (

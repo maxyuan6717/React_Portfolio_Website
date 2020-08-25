@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Projects.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
-import ProgCircle from "./ProgCircle";
 
 function Projects() {
   return (

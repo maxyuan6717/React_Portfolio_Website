@@ -94,7 +94,7 @@ function Home() {
               </a>
               <a
                 // href={resume}
-                href=""
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.social_btn + " pl-2 py-2 " + styles.resume}
@@ -107,6 +107,7 @@ function Home() {
           <Col md={4} className="d-flex">
             <img
               src={avatar}
+              alt="Max Yuan"
               width={200}
               className={styles.avatar + " m-auto"}
             />
