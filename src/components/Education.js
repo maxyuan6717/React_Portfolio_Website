@@ -120,7 +120,6 @@ function Education() {
               <span className={styles.course + " mx-1 "}>
                 Science Olympiad (Head)
               </span>
-              <span className={styles.course + " mx-1 "}>USACO (Platinum)</span>
             </Row>
           </Col>
         </Row>

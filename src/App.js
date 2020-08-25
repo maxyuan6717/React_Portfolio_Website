@@ -3,6 +3,8 @@ import Home from "./components/Home";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 import PortfolioNavbar from "./components/Navbar";
 import { Element, scroller } from "react-scroll";
 
@@ -13,6 +15,7 @@ function App() {
     let offset;
     if (scroll === "education") offset = -150;
     else if (scroll === "skills") offset = -50;
+    else if (scroll === "experience") offset = -150;
     scroller.scrollTo(scroll, {
       smooth: true,
       duration: 500,
@@ -34,6 +37,10 @@ function App() {
       <Element name="experience">
         <Experience />
       </Element>
+      <Element name="projects">
+        <Projects />
+      </Element>
+      <Footer />
     </div>
   );
 }
