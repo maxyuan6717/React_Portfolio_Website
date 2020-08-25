@@ -8,8 +8,6 @@ import TypistLoop from "react-typist-loop";
 import "react-typist/dist/Typist.css";
 import { FaGithub, FaLinkedinIn, FaRegFilePdf } from "react-icons/fa";
 import avatar from "../images/avatar.jpg";
-import ParticleImage, { forces, Vector } from "react-particle-image";
-import maxyuan from "../images/MAXYUAN.png";
 // import resume from "../files/Max_Yuan_Resume.pdf";
 
 function Home() {
@@ -18,35 +16,17 @@ function Home() {
       <FadeInSection>
         <Row className={styles.home_content + " mx-auto"}>
           <Col md={8} className="p-0">
-            {/* <h1 className={styles.header}>MAX YUAN</h1> */}
-            <div className={styles.particle_name}>
-              <ParticleImage
-                scale={0.47}
-                maxParticles={3000}
-                backgroundColor="transparent"
-                src={maxyuan}
-                mouseMoveForce={(x, y) => forces.disturbance(x, y, 3)}
-                touchMoveForce={(x, y) => forces.disturbance(x, y, 3)}
-                mouseDownForce={(x, y) => forces.disturbance(x, y, 10)}
-                particleOptions={{
-                  mass: () => 30,
-                  filter: ({ x, y, image }) => {
-                    const pixel = image.get(x, y);
-                    return pixel.r < 200;
-                  },
-                  color: () => "#3273dc",
-                  friction: () => 0.3,
-                  initialPosition: ({ canvasDimensions }) => {
-                    return new Vector(
-                      canvasDimensions.width / 2,
-                      canvasDimensions.height / 2
-                    );
-                  },
-                }}
-                height={80}
-              />
-            </div>
-            <Row className={styles.description + " mx-auto pt-2"}>
+            <Row className={styles.name + " mx-auto"}>
+              <span className={styles.letter}>M</span>
+              <span className={styles.letter}>A</span>
+              <span className={styles.letter}>X</span>
+              &nbsp;
+              <span className={styles.letter}>Y</span>
+              <span className={styles.letter}>U</span>
+              <span className={styles.letter}>A</span>
+              <span className={styles.letter}>N</span>
+            </Row>
+            <Row className={styles.description + " mx-auto"}>
               I do&nbsp;
               <TypistLoop interval={500}>
                 {["Web Development", "Competitive Programming", "Robotics"].map(
@@ -62,7 +42,7 @@ function Home() {
             </Row>
             <Row className={styles.email + " mx-auto py-3"}>
               <div>
-                Hi, I'm a sophomore studying CS/Econ at Yale. If you want to
+                Hi! I'm a sophomore studying CS/Econ at Yale. If you want to
                 connect, chat, or collaborate on a project, reach out to me
                 at&nbsp;
                 <a

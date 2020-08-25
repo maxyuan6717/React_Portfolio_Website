@@ -62,8 +62,7 @@ function Projects() {
 
             <Row className={styles.description + " mx-auto my-2"}>
               I built this portfolio website from scratch using ReactJS,
-              HTML/CSS, and Bootstrap. CI/CD is implemented through Github
-              Pages.
+              HTML/CSS, and Bootstrap. CI/CD is implemented through Travis CI
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-1"}>ReactJS</div>
