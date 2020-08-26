@@ -47,7 +47,7 @@ function Education({ theme, is_mobile }) {
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-1 my-1"
+                  " mr-2 my-1"
                 }
               >
                 Data Structures
@@ -55,7 +55,7 @@ function Education({ theme, is_mobile }) {
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mx-1 my-1"
+                  " mr-2 my-1"
                 }
               >
                 Systems Programming
@@ -63,7 +63,7 @@ function Education({ theme, is_mobile }) {
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mx-1 my-1"
+                  " mr-2 my-1"
                 }
               >
                 Discrete Math
@@ -71,7 +71,7 @@ function Education({ theme, is_mobile }) {
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mx-1 my-1"
+                  " mr-2 my-1"
                 }
               >
                 Linear Algebra
@@ -79,7 +79,7 @@ function Education({ theme, is_mobile }) {
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mx-1 my-1"
+                  " mr-2 my-1"
                 }
               >
                 Microeconomics
@@ -89,7 +89,7 @@ function Education({ theme, is_mobile }) {
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-1 my-1"
+                  " mr-2 my-1"
                 }
               >
                 Unsupervised Learning
@@ -97,7 +97,7 @@ function Education({ theme, is_mobile }) {
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mx-1 my-1"
+                  " mr-2 my-1"
                 }
               >
                 Economics & Computation
@@ -105,7 +105,7 @@ function Education({ theme, is_mobile }) {
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mx-1 my-1"
+                  " mr-2 my-1"
                 }
               >
                 Probability & Statistics
@@ -113,7 +113,7 @@ function Education({ theme, is_mobile }) {
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mx-1 my-1"
+                  " mr-2 my-1"
                 }
               >
                 Macroeconomics
@@ -179,7 +179,7 @@ function Education({ theme, is_mobile }) {
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mx-1 my-1"
+                  " mr-2 my-1"
                 }
               >
                 AP Calculus BC
@@ -187,7 +187,7 @@ function Education({ theme, is_mobile }) {
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mx-1 my-1"
+                  " mr-2 my-1"
                 }
               >
                 Multivariable Calculus
@@ -208,7 +208,7 @@ function Education({ theme, is_mobile }) {
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mx-1 my-1"
+                  " mr-2 my-1"
                 }
               >
                 Science Olympiad (Head)

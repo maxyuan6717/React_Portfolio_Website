@@ -45,12 +45,12 @@ function Projects({ theme, is_mobile }) {
               of code).
             </Row>
             <Row className="mx-auto">
-              <div className={"technology mr-1 my-1"}>ReactJS</div>
-              <div className={"technology mx-1 my-1"}>HTML/CSS</div>
-              <div className={"technology mx-1 my-1"}>Python</div>
-              <div className={"technology mx-1 my-1"}>GraphQL</div>
-              <div className={"technology mx-1 my-1"}>Hasura</div>
-              <div className={"technology mx-1 my-1"}>Docker</div>
+              <div className={"technology mr-2 my-1"}>ReactJS</div>
+              <div className={"technology mr-2 my-1"}>HTML/CSS</div>
+              <div className={"technology mr-2 my-1"}>Python</div>
+              <div className={"technology mr-2 my-1"}>GraphQL</div>
+              <div className={"technology mr-2 my-1"}>Hasura</div>
+              <div className={"technology mr-2 my-1"}>Docker</div>
             </Row>
           </FadeInSection>
           <FadeInSection>
@@ -80,10 +80,10 @@ function Projects({ theme, is_mobile }) {
               HTML/CSS, and Bootstrap. CI/CD is implemented through Travis CI.
             </Row>
             <Row className="mx-auto">
-              <div className={"technology mr-1 my-1"}>ReactJS</div>
-              <div className={"technology mx-1 my-1"}>HTML/CSS</div>
-              <div className={"technology mx-1 my-1"}>Bootstrap</div>
-              <div className={"technology mx-1 my-1"}>CI/CD</div>
+              <div className={"technology mr-2 my-1"}>ReactJS</div>
+              <div className={"technology mr-2 my-1"}>HTML/CSS</div>
+              <div className={"technology mr-2 my-1"}>Bootstrap</div>
+              <div className={"technology mr-2 my-1"}>CI/CD</div>
             </Row>
           </FadeInSection>
           <FadeInSection>
@@ -117,11 +117,11 @@ function Projects({ theme, is_mobile }) {
               Firebase realtime database to store the results.
             </Row>
             <Row className="mx-auto">
-              <div className={"technology mr-1 my-1"}>Python</div>
-              <div className={"technology mx-1 my-1"}>Java</div>
-              <div className={"technology mx-1 my-1"}>Pandas</div>
-              <div className={"technology mx-1 my-1"}>NumPy</div>
-              <div className={"technology mx-1 my-1"}>Google Firebase</div>
+              <div className={"technology mr-2 my-1"}>Python</div>
+              <div className={"technology mr-2 my-1"}>Java</div>
+              <div className={"technology mr-2 my-1"}>Pandas</div>
+              <div className={"technology mr-2 my-1"}>NumPy</div>
+              <div className={"technology mr-2 my-1"}>Google Firebase</div>
             </Row>
           </FadeInSection>
           <FadeInSection>
@@ -154,7 +154,7 @@ function Projects({ theme, is_mobile }) {
               my solutions to 600+ coding problems.
             </Row>
             <Row className="mx-auto">
-              <div className={"technology mr-1 my-1"}>C/C++</div>
+              <div className={"technology mr-2 my-1"}>C/C++</div>
             </Row>
           </FadeInSection>
           <FadeInSection>
@@ -206,10 +206,10 @@ function Projects({ theme, is_mobile }) {
               </span>
             </Row>
             <Row className="mx-auto">
-              <div className={"technology mr-1 my-1"}>CAD Modeling</div>
-              <div className={"technology mx-1 my-1"}>Arduino (C/C++)</div>
-              <div className={"technology mx-1 my-1"}>Circuitry</div>
-              <div className={"technology mx-1 my-1"}>3D Printing</div>
+              <div className={"technology mr-2 my-1"}>CAD Modeling</div>
+              <div className={"technology mr-2 my-1"}>Arduino (C/C++)</div>
+              <div className={"technology mr-2 my-1"}>Circuitry</div>
+              <div className={"technology mr-2 my-1"}>3D Printing</div>
             </Row>
           </FadeInSection>
         </Col>

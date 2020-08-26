@@ -54,12 +54,12 @@ function Experience({ theme, is_mobile }) {
               any software or database related issues.
             </Row>
             <Row className="mx-auto">
-              <div className={"technology mr-1 my-1"}>ReactJS</div>
-              <div className={"technology mx-1 my-1"}>HTML/CSS</div>
-              <div className={"technology mx-1 my-1"}>TypeScript</div>
-              <div className={"technology mx-1 my-1"}>Java</div>
-              <div className={"technology mx-1 my-1"}>AWS (RDS)</div>
-              <div className={"technology mx-1 my-1"}>Okta OIDC SDK</div>
+              <div className={"technology mr-2 my-1"}>ReactJS</div>
+              <div className={"technology mr-2 my-1"}>HTML/CSS</div>
+              <div className={"technology mr-2 my-1"}>TypeScript</div>
+              <div className={"technology mr-2 my-1"}>Java</div>
+              <div className={"technology mr-2 my-1"}>AWS (RDS)</div>
+              <div className={"technology mr-2 my-1"}>Okta OIDC SDK</div>
             </Row>
           </FadeInSection>
           <FadeInSection>
@@ -83,12 +83,12 @@ function Experience({ theme, is_mobile }) {
               Harvest, SonarQube, PipeDrive, AWS, etc.).
             </Row>
             <Row className="mx-auto">
-              <div className={"technology mr-1 my-1"}>ReactJS</div>
-              <div className={"technology mx-1 my-1"}>Python</div>
-              <div className={"technology mx-1 my-1"}>HTML/CSS</div>
-              <div className={"technology mx-1 my-1"}>TypeScript</div>
-              <div className={"technology mx-1 my-1"}>Java</div>
-              <div className={"technology mx-1 my-1"}>
+              <div className={"technology mr-2 my-1"}>ReactJS</div>
+              <div className={"technology mr-2 my-1"}>Python</div>
+              <div className={"technology mr-2 my-1"}>HTML/CSS</div>
+              <div className={"technology mr-2 my-1"}>TypeScript</div>
+              <div className={"technology mr-2 my-1"}>Java</div>
+              <div className={"technology mr-2 my-1"}>
                 AWS (S3, RDS, Lambda, QuickSight)
               </div>
             </Row>
