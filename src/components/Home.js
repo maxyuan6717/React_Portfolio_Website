@@ -50,12 +50,12 @@ function Home({ is_mobile }) {
                 ].map((text) => (
                   <Typist key={text}>
                     <span className={styles.typist_text}>{text}</span>
+                    .
                     <Typist.Delay ms={1000} />
-                    <Typist.Backspace count={text.length} />
+                    <Typist.Backspace count={text.length + 1} />
                   </Typist>
                 ))}
               </TypistLoop>
-              .
             </Row>
             <Row className={styles.email + " mx-auto py-3"}>
               <div>
