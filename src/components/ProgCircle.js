@@ -11,7 +11,7 @@ function ProgCircle({ progress, text, indx, num_cols }) {
     trailColor: "#f4f4f4",
     text: {
       style: {
-        fontSize: "13px",
+        fontSize: "15px",
         textAlign: "center",
         color: "black",
         position: "absolute",

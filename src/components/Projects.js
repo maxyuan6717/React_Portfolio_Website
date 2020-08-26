@@ -30,13 +30,13 @@ function Projects({ is_mobile }) {
               </a>
             </Row>
             <Row className={styles.description + " mx-auto mt-2 mb-1"}>
-              Collaborating with 10 other members to maintain CourseTable, an
-              intuitive website that processes 1.5 million requests per semester
-              to help over 6,000 Yale students discover and choose from the
-              university’s myriad of courses. I contributed to the back-end
-              crawler that keeps the database populated with updated course
-              data, and I am leading the development of the ReactJS front-end
-              web application (175+ commits and 6,000+ lines of code)
+              Collaborating with 10 other developers to maintain CourseTable, an
+              intuitive course discovery platform that processes 1.5 million
+              requests from 6,000+ Yale students per semester. I contributed to
+              the back-end crawler that keeps the database populated with
+              updated course data, and I'm leading the development of the
+              ReactJS front-end web application (175+ commits and 6,000+ lines
+              of code)
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-1 my-1"}>ReactJS</div>
