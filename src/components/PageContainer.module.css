@@ -1,3 +1,18 @@
 .container {
   max-width: 750px !important;
 }
+
+.scroll_to {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: rgb(189, 189, 189);
+  transform: translateY(0px);
+  transition: 0.3s !important;
+}
+
+.scroll_to:hover {
+  cursor: pointer;
+  color: #3273dc;
+  transform: translateY(-10px);
+}

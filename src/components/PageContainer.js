@@ -6,13 +6,15 @@ import Experience from "./Experience";
 import Projects from "./Projects";
 import Footer from "./Footer";
 import PortfolioNavbar from "./Navbar";
-import { Element, scroller } from "react-scroll";
+import { Element, scroller, animateScroll } from "react-scroll";
 import { useWindowDimensions } from "./WindowDimensionsProvider";
+import { AiOutlineArrowUp } from "react-icons/ai";
 import styles from "./PageContainer.module.css";
+import { Fade } from "react-bootstrap";
 
 function PageContainer() {
   const [scroll, setScroll] = useState("");
-  const { width } = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
   const is_mobile = width <= 425;
 
   useEffect(() => {
@@ -28,6 +30,21 @@ function PageContainer() {
     });
     if (scroll !== "") setScroll("");
   }, [scroll]);
+
+  const [scroll_visible, setScrollVisible] = useState(false);
+  // Render scroll-up button after scrolling a lot
+  useEffect(() => {
+    window.onscroll = () => {
+      if (window.pageYOffset > height && !scroll_visible)
+        setScrollVisible(true);
+      if (window.pageYOffset < height && scroll_visible)
+        setScrollVisible(false);
+    };
+  });
+
+  const scrollTop = () => {
+    animateScroll.scrollToTop();
+  };
 
   return (
     <>
@@ -50,6 +67,11 @@ function PageContainer() {
         </Element>
         <Footer />
       </div>
+      <Fade in={scroll_visible} unmountOnExit={true}>
+        <div className={styles.scroll_to} onClick={scrollTop}>
+          <AiOutlineArrowUp size={25} />
+        </div>
+      </Fade>
     </>
   );
 }

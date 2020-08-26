@@ -98,7 +98,7 @@ function Home({ is_mobile }) {
               </a>
             </Row>
           </Col>
-          <Col md={4}>
+          <Col md={4} style={{ minHeight: "200px" }}>
             <img
               src={avatar}
               alt="Max Yuan"
