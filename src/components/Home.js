@@ -43,15 +43,17 @@ function Home({ is_mobile }) {
             >
               I do&nbsp;
               <TypistLoop interval={500}>
-                {["Web Development", "Competitive Programming", "Robotics"].map(
-                  (text) => (
-                    <Typist key={text}>
-                      <span className={styles.typist_text}>{text}</span>
-                      <Typist.Delay ms={1000} />
-                      <Typist.Backspace count={text.length} />
-                    </Typist>
-                  )
-                )}
+                {[
+                  "Web Development.",
+                  "Competitive Programming.",
+                  "Robotics.",
+                ].map((text) => (
+                  <Typist key={text}>
+                    <span className={styles.typist_text}>{text}</span>
+                    <Typist.Delay ms={1000} />
+                    <Typist.Backspace count={text.length} />
+                  </Typist>
+                ))}
               </TypistLoop>
             </Row>
             <Row className={styles.email + " mx-auto py-3"}>
