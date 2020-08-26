@@ -12,17 +12,19 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 import styles from "./PageContainer.module.css";
 import { Fade } from "react-bootstrap";
 
-function PageContainer() {
+function PageContainer({ theme, toggleTheme }) {
   const [scroll, setScroll] = useState("");
   const { width, height } = useWindowDimensions();
   const is_mobile = width <= 425;
 
   useEffect(() => {
-    scroller.scrollTo(scroll, {
-      smooth: true,
-      duration: 500,
-      offset: is_mobile ? -180 : -50,
-    });
+    if (scroll.length > 0) {
+      scroller.scrollTo(scroll, {
+        smooth: true,
+        duration: 500,
+        offset: is_mobile ? -180 : -50,
+      });
+    }
     if (scroll !== "") setScroll("");
   }, [scroll, is_mobile]);
 
@@ -35,7 +37,7 @@ function PageContainer() {
       if (window.pageYOffset < height && scroll_visible)
         setScrollVisible(false);
     };
-  });
+  }, [height, scroll_visible]);
 
   const scrollTop = () => {
     animateScroll.scrollToTop();
@@ -43,24 +45,28 @@ function PageContainer() {
 
   return (
     <>
-      <PortfolioNavbar setScroll={setScroll} />
+      <PortfolioNavbar
+        theme={theme}
+        toggleTheme={toggleTheme}
+        setScroll={setScroll}
+      />
       <div className={styles.container + " mx-auto px-2"}>
         <Element name="home">
-          <Home is_mobile={is_mobile} />
+          <Home theme={theme} is_mobile={is_mobile} />
         </Element>
         <Element name="education">
-          <Education is_mobile={is_mobile} />
+          <Education theme={theme} is_mobile={is_mobile} />
         </Element>
         <Element name="skills">
-          <Skills is_mobile={is_mobile} />
+          <Skills theme={theme} is_mobile={is_mobile} />
         </Element>
         <Element name="experience">
-          <Experience is_mobile={is_mobile} />
+          <Experience theme={theme} is_mobile={is_mobile} />
         </Element>
         <Element name="projects">
-          <Projects is_mobile={is_mobile} />
+          <Projects theme={theme} is_mobile={is_mobile} />
         </Element>
-        <Footer />
+        <Footer theme={theme} />
       </div>
       {!is_mobile && (
         <Fade in={scroll_visible} unmountOnExit={true}>

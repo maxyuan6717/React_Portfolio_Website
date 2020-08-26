@@ -3,7 +3,7 @@ import styles from "./Education.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
 
-function Education({ is_mobile }) {
+function Education({ theme, is_mobile }) {
   return (
     <Col
       className={styles.container + " p-0 mx-auto"}
@@ -27,7 +27,12 @@ function Education({ is_mobile }) {
                 New Haven, CT
               </Col>
             </Row>
-            <Row className={styles.degree + " mx-auto justify-content-between"}>
+            <Row
+              className={
+                (theme === "dark" ? styles.degree_dark : styles.degree) +
+                " mx-auto justify-content-between"
+              }
+            >
               <Col sm="auto" className="p-0">
                 B.S. in Computer Science and Economics
               </Col>
@@ -39,33 +44,78 @@ function Education({ is_mobile }) {
               <span className={styles.coursework}>Relevant Coursework</span>
             </Row>
             <Row className={"mx-auto mt-1 pl-0 "}>
-              <span className={styles.course + " mr-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-1 my-1"
+                }
+              >
                 Data Structures
               </span>
-              <span className={styles.course + " mx-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mx-1 my-1"
+                }
+              >
                 Systems Programming
               </span>
-              <span className={styles.course + " mx-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mx-1 my-1"
+                }
+              >
                 Discrete Math
               </span>
-              <span className={styles.course + " mx-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mx-1 my-1"
+                }
+              >
                 Linear Algebra
               </span>
-              <span className={styles.course + " mx-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mx-1 my-1"
+                }
+              >
                 Microeconomics
               </span>
             </Row>
             <Row className={"mx-auto pl-0"}>
-              <span className={styles.course + " mr-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-1 my-1"
+                }
+              >
                 Unsupervised Learning
               </span>
-              <span className={styles.course + " mx-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mx-1 my-1"
+                }
+              >
                 Economics & Computation
               </span>
-              <span className={styles.course + " mx-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mx-1 my-1"
+                }
+              >
                 Probability & Statistics
               </span>
-              <span className={styles.course + " mx-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mx-1 my-1"
+                }
+              >
                 Macroeconomics
               </span>
             </Row>
@@ -73,7 +123,12 @@ function Education({ is_mobile }) {
               <span className={styles.coursework}>Activities</span>
             </Row>
             <Row className={"mx-auto mt-1 pl-0 "}>
-              <span className={styles.course + " mr-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-1 my-1"
+                }
+              >
                 Yale Computer Society (Dev Team)
               </span>
             </Row>
@@ -96,7 +151,12 @@ function Education({ is_mobile }) {
                 Cincinnati, OH
               </Col>
             </Row>
-            <Row className={styles.degree + " mx-auto justify-content-between"}>
+            <Row
+              className={
+                (theme === "dark" ? styles.degree_dark : styles.degree) +
+                " mx-auto justify-content-between"
+              }
+            >
               <Col sm="auto" className="p-0">
                 High School Diploma
               </Col>
@@ -108,13 +168,28 @@ function Education({ is_mobile }) {
               <span className={styles.coursework}>Relevant Coursework</span>
             </Row>
             <Row className={"mx-auto mt-1 pl-0 "}>
-              <span className={styles.course + " mr-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-1 my-1"
+                }
+              >
                 AP Computer Science A
               </span>
-              <span className={styles.course + " mx-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mx-1 my-1"
+                }
+              >
                 AP Calculus BC
               </span>
-              <span className={styles.course + " mx-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mx-1 my-1"
+                }
+              >
                 Multivariable Calculus
               </span>
             </Row>
@@ -122,10 +197,20 @@ function Education({ is_mobile }) {
               <span className={styles.coursework}>Activities</span>
             </Row>
             <Row className={"mx-auto mt-1 pl-0 "}>
-              <span className={styles.course + " mr-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-1 my-1"
+                }
+              >
                 Math Club (Head)
               </span>
-              <span className={styles.course + " mx-1 my-1"}>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mx-1 my-1"
+                }
+              >
                 Science Olympiad (Head)
               </span>
             </Row>

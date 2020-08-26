@@ -1,5 +1,5 @@
 .container {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .footer_text {
@@ -7,7 +7,7 @@
 }
 
 .name {
-  color: #3273dc;
+  color: var(--blue-color);
 }
 
 .social_btn {
@@ -36,6 +36,12 @@
 .github:hover {
   border-color: rgb(114, 1, 114);
   color: rgb(114, 1, 114);
+}
+
+.github_dark,
+.github_dark:hover {
+  color: rgb(175, 0, 175);
+  border-color: rgb(175, 0, 175);
 }
 
 .linkedin,

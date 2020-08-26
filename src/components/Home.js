@@ -10,7 +10,7 @@ import { FaGithub, FaLinkedinIn, FaRegFilePdf } from "react-icons/fa";
 import avatar from "../images/avatar.jpg";
 // import resume from "../files/Max_Yuan_Resume.pdf";
 
-function Home({ is_mobile }) {
+function Home({ theme, is_mobile }) {
   return (
     <Col
       className={(is_mobile ? "" : styles.container) + " p-0 mx-auto"}
@@ -76,7 +76,13 @@ function Home({ is_mobile }) {
                 href="https://github.com/maxyuan6717"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.social_btn + " pr-2 py-2 " + styles.github}
+                className={
+                  styles.social_btn +
+                  " pr-2 py-2 " +
+                  (theme === "dark"
+                    ? styles.github_dark + " " + styles.color_dark
+                    : styles.github)
+                }
                 title="Github"
               >
                 <FaGithub size={32} />
@@ -85,7 +91,12 @@ function Home({ is_mobile }) {
                 href="https://www.linkedin.com/in/max-yuan-209930194/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.social_btn + " p-2 " + styles.linkedin}
+                className={
+                  styles.social_btn +
+                  " p-2 " +
+                  styles.linkedin +
+                  (theme === "dark" ? " " + styles.color_dark : "")
+                }
                 title="LinkedIn"
               >
                 <FaLinkedinIn size={32} />
@@ -95,7 +106,12 @@ function Home({ is_mobile }) {
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.social_btn + " pl-2 py-2 " + styles.resume}
+                className={
+                  styles.social_btn +
+                  " pl-2 py-2 " +
+                  styles.resume +
+                  (theme === "dark" ? " " + styles.color_dark : "")
+                }
                 title="Resume"
               >
                 <FaRegFilePdf size={30} />

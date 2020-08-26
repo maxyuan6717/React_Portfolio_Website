@@ -3,7 +3,7 @@ import styles from "./Experience.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
 
-function Experience({ is_mobile }) {
+function Experience({ theme, is_mobile }) {
   return (
     <Col
       className={styles.container + " p-0 mx-auto"}
@@ -36,7 +36,8 @@ function Experience({ is_mobile }) {
             </Row>
             <Row
               className={
-                styles.position + " mx-auto justify-content-between mt-2"
+                (theme === "dark" ? styles.position_dark : styles.position) +
+                " mx-auto justify-content-between mt-2"
               }
             >
               <Col sm="auto" className="p-0">
@@ -64,7 +65,8 @@ function Experience({ is_mobile }) {
           <FadeInSection>
             <Row
               className={
-                styles.position + " mx-auto justify-content-between mt-4"
+                (theme === "dark" ? styles.position_dark : styles.position) +
+                " mx-auto justify-content-between mt-4"
               }
             >
               <Col sm="auto" className="p-0">

@@ -3,17 +3,17 @@ import { Col } from "react-bootstrap";
 import ProgressBar from "./ProgressBar";
 import FadeInSection from "./FadeInSection";
 
-function ProgCircle({ progress, text, indx, num_cols }) {
+function ProgCircle({ theme, progress, text, indx, num_cols }) {
   const colors = ["#75a3eb", "#ffa454", "#75eb85"];
   var options = {
     strokeWidth: 4,
     color: colors[indx],
-    trailColor: "#f4f4f4",
+    trailColor: theme === "dark" ? "#212121" : "#f4f4f4",
     text: {
       style: {
         fontSize: "15px",
         textAlign: "center",
-        color: "black",
+        color: theme === "dark" ? "#FAFAFA" : "#363537",
         position: "absolute",
         left: "50%",
         top: "50%",

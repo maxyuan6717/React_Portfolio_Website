@@ -9,7 +9,7 @@ import {
   FaEnvelopeOpenText,
 } from "react-icons/fa";
 
-function Footer({ is_mobile }) {
+function Footer({ theme, is_mobile }) {
   const btn_size = 16;
   return (
     <Col className={styles.container + " p-0 mx-auto"}>
@@ -28,7 +28,11 @@ function Footer({ is_mobile }) {
             href="https://github.com/maxyuan6717"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.social_btn + " mx-2 " + styles.github}
+            className={
+              styles.social_btn +
+              " mx-2 " +
+              (theme === "dark" ? styles.github_dark : styles.github)
+            }
           >
             <FaGithubAlt size={btn_size} className={styles.social_icon} />
           </a>

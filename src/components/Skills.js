@@ -5,7 +5,7 @@ import FadeInSection from "./FadeInSection";
 import ProgCircle from "./ProgCircle";
 import { useWindowDimensions } from "./WindowDimensionsProvider";
 
-function Skills({ is_mobile }) {
+function Skills({ theme, is_mobile }) {
   const { width } = useWindowDimensions();
   let num_cols = 4;
   if (width < 768) num_cols = 2;
@@ -95,6 +95,7 @@ function Skills({ is_mobile }) {
             text={skill.text}
             indx={i}
             num_cols={num_cols}
+            theme={theme}
           />
         );
       }

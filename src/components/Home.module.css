@@ -29,7 +29,6 @@
 
 .email {
   font-size: 24px;
-  color: rgb(87, 87, 87);
 }
 
 .typist_text {
@@ -46,8 +45,16 @@
   transform: translateY(-6px);
 }
 
+.color_dark {
+  color: #fafafa;
+}
+
 .github:hover {
   color: rgb(114, 1, 114);
+}
+
+.github_dark:hover {
+  color: rgb(175, 0, 175);
 }
 
 .linkedin:hover {
@@ -59,7 +66,7 @@
 }
 
 .highlight_link {
-  color: #3273dc;
+  color: var(--blue-color);
   padding: 0px 2px;
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
@@ -68,7 +75,7 @@
 }
 
 .highlight_link:hover {
-  color: #3273dc;
+  color: var(--blue-color);
   text-decoration: none !important;
   cursor: pointer;
   box-shadow: inset 0 -55px 0 0 rgba(50, 115, 220, 0.2);

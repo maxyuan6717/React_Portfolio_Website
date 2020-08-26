@@ -1,0 +1,35 @@
+.custom.react-toggle .react-toggle-track .react-toggle-track-check,
+.custom.react-toggle .react-toggle-track .react-toggle-track-x {
+  height: 15px;
+}
+
+.custom.react-toggle .react-toggle-track {
+  background-color: rgb(154, 201, 255);
+}
+
+.custom.react-toggle .react-toggle-track:hover,
+.custom.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: rgb(136, 191, 255);
+}
+
+.custom.react-toggle--checked .react-toggle-track {
+  background-color: rgb(255, 151, 91);
+}
+.custom.react-toggle--checked .react-toggle-track:hover,
+.custom.react-toggle--checked:hover:not(.react-toggle--disabled)
+  .react-toggle-track {
+  background-color: rgb(255, 137, 68);
+}
+
+.custom.react-toggle .react-toggle-thumb {
+  border: none;
+}
+
+.custom.react-toggle--focus .react-toggle-thumb,
+.custom.react-toggle--active .react-toggle-thumb {
+  box-shadow: none;
+}
+
+.custom.react-toggle {
+  display: block;
+}

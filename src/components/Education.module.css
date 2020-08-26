@@ -9,6 +9,12 @@
 
 .degree {
   color: rgb(99, 99, 99);
+  transition: 1s;
+}
+
+.degree_dark {
+  color: rgb(196, 196, 196);
+  transition: 1s;
 }
 
 .coursework {
@@ -21,4 +27,14 @@
   border-radius: 8px;
   padding: 6px;
   font-size: 13px;
+  transition: 1s;
+}
+
+.course_dark {
+  color: rgb(190, 190, 190);
+  background-color: rgb(54, 54, 54);
+  border-radius: 8px;
+  padding: 6px;
+  font-size: 13px;
+  transition: 1s;
 }

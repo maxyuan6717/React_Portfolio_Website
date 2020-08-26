@@ -13,6 +13,12 @@
 
 .scroll_to:hover {
   cursor: pointer;
-  color: #3273dc;
+  color: var(--blue-color);
   transform: translateY(-10px);
+}
+
+.theme_toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }

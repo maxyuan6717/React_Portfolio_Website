@@ -3,7 +3,7 @@ import styles from "./Projects.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
 
-function Projects({ is_mobile }) {
+function Projects({ theme, is_mobile }) {
   return (
     <Col
       className={styles.container + " p-0 mx-auto"}
@@ -24,7 +24,13 @@ function Projects({ is_mobile }) {
                 href="https://github.com/coursetable/coursetable/tree/redesign"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.highlight_link + " " + styles.github_link}
+                className={
+                  styles.highlight_link +
+                  " " +
+                  (theme === "dark"
+                    ? styles.github_link_dark
+                    : styles.github_link)
+                }
               >
                 CourseTable
               </a>
@@ -57,7 +63,13 @@ function Projects({ is_mobile }) {
                 href="https://github.com/maxyuan6717/React_Portfolio_Website"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.highlight_link + " " + styles.github_link}
+                className={
+                  styles.highlight_link +
+                  " " +
+                  (theme === "dark"
+                    ? styles.github_link_dark
+                    : styles.github_link)
+                }
               >
                 React Portfolio Website
               </a>
@@ -84,7 +96,13 @@ function Projects({ is_mobile }) {
                 href="https://github.com/maxyuan6717/GoodWork"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.highlight_link + " " + styles.github_link}
+                className={
+                  styles.highlight_link +
+                  " " +
+                  (theme === "dark"
+                    ? styles.github_link_dark
+                    : styles.github_link)
+                }
               >
                 GoodWork
               </a>
@@ -116,7 +134,13 @@ function Projects({ is_mobile }) {
                 href="https://github.com/maxyuan6717/Competitive_Programming"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.highlight_link + " " + styles.github_link}
+                className={
+                  styles.highlight_link +
+                  " " +
+                  (theme === "dark"
+                    ? styles.github_link_dark
+                    : styles.github_link)
+                }
               >
                 Competitive Programming
               </a>
@@ -143,7 +167,13 @@ function Projects({ is_mobile }) {
                 href="https://github.com/maxyuan6717/6_DOF_Robot_Arm"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.highlight_link + " " + styles.github_link}
+                className={
+                  styles.highlight_link +
+                  " " +
+                  (theme === "dark"
+                    ? styles.github_link_dark
+                    : styles.github_link)
+                }
               >
                 6 DOF Robot Arm
               </a>

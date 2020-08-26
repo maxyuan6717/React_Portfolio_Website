@@ -27,10 +27,12 @@ code {
   background: #ff7c7c81;
 }
 
+/* light blue: #75a3eb */
+
 .technology {
-  border: 1px solid #3273dc;
+  border: 1px solid var(--blue-color);
   padding: 5px;
-  color: #3273dc;
+  color: var(--blue-color);
   font-size: 13px;
   border-radius: 5px;
 }
@@ -38,5 +40,5 @@ code {
 .section_header {
   font-size: 20px;
   font-weight: 600;
-  color: #3273dc;
+  color: var(--blue-color);
 }

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
+import ThemeToggle from "./ThemeToggle";
 
-function PortfolioNavbar({ setScroll }) {
+function PortfolioNavbar({ theme, toggleTheme, setScroll }) {
   const [nav_expanded, setExpand] = useState(false);
 
   return (
@@ -49,6 +50,9 @@ function PortfolioNavbar({ setScroll }) {
                     onClick={() => setScroll("projects")}
                   >
                     Projects
+                  </div>
+                  <div className={styles.theme_toggle + " my-auto"}>
+                    <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
                   </div>
                 </Nav>
               </Navbar.Collapse>
