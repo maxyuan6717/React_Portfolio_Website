@@ -18,18 +18,13 @@ function PageContainer() {
   const is_mobile = width <= 425;
 
   useEffect(() => {
-    let offset;
-    if (scroll === "education") offset = -150;
-    else if (scroll === "skills") offset = -50;
-    else if (scroll === "experience") offset = -150;
-    else if (scroll === "projects") offset = -50;
     scroller.scrollTo(scroll, {
       smooth: true,
       duration: 500,
-      offset: offset,
+      offset: is_mobile ? -200 : -10,
     });
     if (scroll !== "") setScroll("");
-  }, [scroll]);
+  }, [scroll, is_mobile]);
 
   const [scroll_visible, setScrollVisible] = useState(false);
   // Render scroll-up button after scrolling a lot
@@ -67,11 +62,13 @@ function PageContainer() {
         </Element>
         <Footer />
       </div>
-      <Fade in={scroll_visible} unmountOnExit={true}>
-        <div className={styles.scroll_to} onClick={scrollTop}>
-          <AiOutlineArrowUp size={25} />
-        </div>
-      </Fade>
+      {!is_mobile && (
+        <Fade in={scroll_visible} unmountOnExit={true}>
+          <div className={styles.scroll_to} onClick={scrollTop}>
+            <AiOutlineArrowUp size={25} />
+          </div>
+        </Fade>
+      )}
     </>
   );
 }

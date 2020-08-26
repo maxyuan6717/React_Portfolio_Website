@@ -18,6 +18,7 @@ function PortfolioNavbar({ setScroll }) {
               expand="md"
               className={styles.navbar}
             >
+              <Navbar.Brand></Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
               <Navbar.Collapse
