@@ -12,7 +12,10 @@ import avatar from "../images/avatar.jpg";
 
 function Home({ is_mobile }) {
   return (
-    <Col className={styles.container + " p-0 mx-auto"}>
+    <Col
+      className={(is_mobile ? "" : styles.container) + " p-0 mx-auto"}
+      style={{ marginBottom: is_mobile ? "50px" : "" }}
+    >
       <FadeInSection>
         <Row
           className={

@@ -2,6 +2,10 @@
   min-height: calc(100vh - 54px);
 }
 
+.mobile_container {
+  margin-bottom: 25px;
+}
+
 .home_content {
   padding-top: 23vh;
 }

@@ -33,7 +33,9 @@ function PageContainer() {
     <>
       <PortfolioNavbar setScroll={setScroll} />
       <div className={styles.container + " mx-auto px-2"}>
-        <Home is_mobile={is_mobile} />
+        <Element name="home">
+          <Home is_mobile={is_mobile} />
+        </Element>
         <Element name="education">
           <Education is_mobile={is_mobile} />
         </Element>
