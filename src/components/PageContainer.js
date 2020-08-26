@@ -21,7 +21,7 @@ function PageContainer() {
     scroller.scrollTo(scroll, {
       smooth: true,
       duration: 500,
-      offset: is_mobile ? -200 : -10,
+      offset: is_mobile ? -180 : -50,
     });
     if (scroll !== "") setScroll("");
   }, [scroll, is_mobile]);
