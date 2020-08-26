@@ -21,7 +21,14 @@ function Experience({ is_mobile }) {
               }
             >
               <Col sm="auto" className="p-0">
-                Golden Section Technology
+                <a
+                  href="https://www.gstdev.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.highlight_link}
+                >
+                  Golden Section Technology
+                </a>
               </Col>
               <Col sm="auto" className="p-0">
                 Houston, TX
@@ -43,7 +50,7 @@ function Experience({ is_mobile }) {
               Implementing OpenID Connect (OIDC) Authentication in custom web
               and mobile apps for client and internal use. Managing AWS resource
               access, Okta Single Sign-on policies, and advising clients with
-              any software or database related issues
+              any software or database related issues.
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-1 my-1"}>ReactJS</div>
@@ -71,7 +78,7 @@ function Experience({ is_mobile }) {
               Built a proprietary Business Intelligence (BI) Dashboard to view
               performance and sales data for each client project. Leveraged Web
               API’s to fetch metric data from various software (Github, Jira,
-              Harvest, SonarQube, PipeDrive, AWS, etc.)
+              Harvest, SonarQube, PipeDrive, AWS, etc.).
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-1 my-1"}>ReactJS</div>

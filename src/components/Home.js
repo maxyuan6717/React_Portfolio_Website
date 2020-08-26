@@ -65,6 +65,7 @@ function Home({ is_mobile }) {
                 >
                   max.yuan@yale.edu
                 </a>
+                .
               </div>
             </Row>
             <Row className="mx-auto">

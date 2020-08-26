@@ -36,7 +36,7 @@ function Projects({ is_mobile }) {
               the back-end crawler that keeps the database populated with
               updated course data, and I'm leading the development of the
               ReactJS front-end web application (175+ commits and 6,000+ lines
-              of code)
+              of code).
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-1 my-1"}>ReactJS</div>
@@ -65,7 +65,7 @@ function Projects({ is_mobile }) {
 
             <Row className={styles.description + " mx-auto mt-2 mb-1"}>
               I built this portfolio website from scratch using ReactJS,
-              HTML/CSS, and Bootstrap. CI/CD is implemented through Travis CI
+              HTML/CSS, and Bootstrap. CI/CD is implemented through Travis CI.
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-1 my-1"}>ReactJS</div>
@@ -172,6 +172,7 @@ function Projects({ is_mobile }) {
                 >
                   Part 2
                 </a>
+                .
               </span>
             </Row>
             <Row className="mx-auto">
