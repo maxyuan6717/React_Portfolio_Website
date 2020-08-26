@@ -44,9 +44,9 @@ function Home({ is_mobile }) {
               I do&nbsp;
               <TypistLoop interval={500}>
                 {[
-                  "Web Development.",
-                  "Competitive Programming.",
-                  "Robotics.",
+                  "Software Development",
+                  "Competitive Programming",
+                  "Robotics",
                 ].map((text) => (
                   <Typist key={text}>
                     <span className={styles.typist_text}>{text}</span>
@@ -55,6 +55,7 @@ function Home({ is_mobile }) {
                   </Typist>
                 ))}
               </TypistLoop>
+              .
             </Row>
             <Row className={styles.email + " mx-auto py-3"}>
               <div>
