@@ -26,7 +26,7 @@ function Projects() {
                 CourseTable
               </a>
             </Row>
-            <Row className={styles.description + " mx-auto my-2"}>
+            <Row className={styles.description + " mx-auto mt-2 mb-1"}>
               Collaborating with 10 other members to maintain CourseTable, an
               intuitive website that processes 1.5 million requests per semester
               to help over 6,000 Yale students discover and choose from the
@@ -36,12 +36,12 @@ function Projects() {
               web application (175+ commits and 6,000+ lines of code)
             </Row>
             <Row className="mx-auto">
-              <div className={"technology mr-1"}>ReactJS</div>
-              <div className={"technology mx-1"}>HTML/CSS</div>
-              <div className={"technology mx-1"}>Python</div>
-              <div className={"technology mx-1"}>GraphQL</div>
-              <div className={"technology mx-1"}>Hasura</div>
-              <div className={"technology mx-1"}>Docker</div>
+              <div className={"technology mr-1 my-1"}>ReactJS</div>
+              <div className={"technology mx-1 my-1"}>HTML/CSS</div>
+              <div className={"technology mx-1 my-1"}>Python</div>
+              <div className={"technology mx-1 my-1"}>GraphQL</div>
+              <div className={"technology mx-1 my-1"}>Hasura</div>
+              <div className={"technology mx-1 my-1"}>Docker</div>
             </Row>
           </FadeInSection>
           <FadeInSection>
@@ -60,15 +60,15 @@ function Projects() {
               </a>
             </Row>
 
-            <Row className={styles.description + " mx-auto my-2"}>
+            <Row className={styles.description + " mx-auto mt-2 mb-1"}>
               I built this portfolio website from scratch using ReactJS,
               HTML/CSS, and Bootstrap. CI/CD is implemented through Travis CI
             </Row>
             <Row className="mx-auto">
-              <div className={"technology mr-1"}>ReactJS</div>
-              <div className={"technology mx-1"}>HTML/CSS</div>
-              <div className={"technology mx-1"}>Bootstrap</div>
-              <div className={"technology mx-1"}>CI/CD</div>
+              <div className={"technology mr-1 my-1"}>ReactJS</div>
+              <div className={"technology mx-1 my-1"}>HTML/CSS</div>
+              <div className={"technology mx-1 my-1"}>Bootstrap</div>
+              <div className={"technology mx-1 my-1"}>CI/CD</div>
             </Row>
           </FadeInSection>
           <FadeInSection>
@@ -86,7 +86,7 @@ function Projects() {
                 GoodWork
               </a>
             </Row>
-            <Row className={styles.description + " mx-auto my-2"}>
+            <Row className={styles.description + " mx-auto mt-2 mb-1"}>
               Collaborated with one other developer to build GoodWork, an
               application that finds local volunteer opportunities involving
               physical exercise to benefit both the community and the user. I
@@ -96,11 +96,11 @@ function Projects() {
               Firebase realtime database to store the results.
             </Row>
             <Row className="mx-auto">
-              <div className={"technology mr-1"}>Python</div>
-              <div className={"technology mx-1"}>Java</div>
-              <div className={"technology mx-1"}>Pandas</div>
-              <div className={"technology mx-1"}>NumPy</div>
-              <div className={"technology mx-1"}>Google Firebase</div>
+              <div className={"technology mr-1 my-1"}>Python</div>
+              <div className={"technology mx-1 my-1"}>Java</div>
+              <div className={"technology mx-1 my-1"}>Pandas</div>
+              <div className={"technology mx-1 my-1"}>NumPy</div>
+              <div className={"technology mx-1 my-1"}>Google Firebase</div>
             </Row>
           </FadeInSection>
           <FadeInSection>
@@ -118,7 +118,7 @@ function Projects() {
                 Competitive Programming
               </a>
             </Row>
-            <Row className={styles.description + " mx-auto my-2"}>
+            <Row className={styles.description + " mx-auto mt-2 mb-1"}>
               Over the course of 3 years, I learned and drilled various data
               structures and algorithms in order to solve complex coding
               challenges. I am a USACO Platinum Division contestant, 2-time
@@ -127,7 +127,7 @@ function Projects() {
               my solutions to 600+ coding problems.
             </Row>
             <Row className="mx-auto">
-              <div className={"technology mr-1"}>C/C++</div>
+              <div className={"technology mr-1 my-1"}>C/C++</div>
             </Row>
           </FadeInSection>
           <FadeInSection>
@@ -145,7 +145,7 @@ function Projects() {
                 6 DOF Robot Arm
               </a>
             </Row>
-            <Row className={styles.description + " mx-auto my-2"}>
+            <Row className={styles.description + " mx-auto mt-2 mb-1"}>
               <span>
                 I designed, built, wired, and programmed a 6 DOF robot arm from
                 scratch. The robot arm mimics the movements of a smaller
@@ -172,10 +172,10 @@ function Projects() {
               </span>
             </Row>
             <Row className="mx-auto">
-              <div className={"technology mr-1"}>CAD Modeling</div>
-              <div className={"technology mx-1"}>Arduino (C/C++)</div>
-              <div className={"technology mx-1"}>Circuitry</div>
-              <div className={"technology mx-1"}>3D Printing</div>
+              <div className={"technology mr-1 my-1"}>CAD Modeling</div>
+              <div className={"technology mx-1 my-1"}>Arduino (C/C++)</div>
+              <div className={"technology mx-1 my-1"}>Circuitry</div>
+              <div className={"technology mx-1 my-1"}>3D Printing</div>
             </Row>
           </FadeInSection>
         </Col>

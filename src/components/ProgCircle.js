@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 import ProgressBar from "./ProgressBar";
 import FadeInSection from "./FadeInSection";
 
-function ProgCircle({ progress, text, indx }) {
+function ProgCircle({ progress, text, indx, num_cols }) {
   const colors = ["#75a3eb", "#ffa454", "#75eb85"];
   var options = {
     strokeWidth: 4,
@@ -29,7 +29,7 @@ function ProgCircle({ progress, text, indx }) {
   const [visible, setVisible] = useState(false);
 
   return (
-    <Col md={3}>
+    <Col xs={12 / num_cols}>
       <FadeInSection setVisible={setVisible}>
         {visible ? (
           <ProgressBar.Circle

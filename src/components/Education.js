@@ -32,35 +32,45 @@ function Education() {
                 May 2023
               </Col>
             </Row>
-            <Row className={"pt-2 mx-auto justify-content-between"}>
+            <Row className={"mt-2 mx-auto justify-content-between"}>
               <span className={styles.coursework}>Relevant Coursework</span>
             </Row>
-            <Row className={"mx-auto my-2 pl-0 "}>
-              <span className={styles.course + " mr-1 "}>Data Structures</span>
-              <span className={styles.course + " mx-1 "}>
+            <Row className={"mx-auto mt-1 pl-0 "}>
+              <span className={styles.course + " mr-1 my-1"}>
+                Data Structures
+              </span>
+              <span className={styles.course + " mx-1 my-1"}>
                 Systems Programming
               </span>
-              <span className={styles.course + " mx-1 "}>Discrete Math</span>
-              <span className={styles.course + " mx-1 "}>Linear Algebra</span>
-              <span className={styles.course + " mx-1 "}>Microeconomics</span>
+              <span className={styles.course + " mx-1 my-1"}>
+                Discrete Math
+              </span>
+              <span className={styles.course + " mx-1 my-1"}>
+                Linear Algebra
+              </span>
+              <span className={styles.course + " mx-1 my-1"}>
+                Microeconomics
+              </span>
             </Row>
-            <Row className={"mx-auto my-2 pl-0"}>
-              <span className={styles.course + " mr-1 "}>
+            <Row className={"mx-auto pl-0"}>
+              <span className={styles.course + " mr-1 my-1"}>
                 Unsupervised Learning
               </span>
-              <span className={styles.course + " mx-1 "}>
+              <span className={styles.course + " mx-1 my-1"}>
                 Economics & Computation
               </span>
-              <span className={styles.course + " mx-1 "}>
+              <span className={styles.course + " mx-1 my-1"}>
                 Probability & Statistics
               </span>
-              <span className={styles.course + " mx-1 "}>Macroeconomics</span>
+              <span className={styles.course + " mx-1 my-1"}>
+                Macroeconomics
+              </span>
             </Row>
-            <Row className={"pt-2 mx-auto"}>
+            <Row className={"mt-2 mx-auto"}>
               <span className={styles.coursework}>Activities</span>
             </Row>
-            <Row className={"mx-auto my-2 pl-0 "}>
-              <span className={styles.course + " mr-1 "}>
+            <Row className={"mx-auto mt-1 pl-0 "}>
+              <span className={styles.course + " mr-1 my-1"}>
                 Yale Computer Society (Dev Team)
               </span>
             </Row>
@@ -91,24 +101,28 @@ function Education() {
                 June 2019
               </Col>
             </Row>
-            <Row className={"pt-2 mx-auto"}>
+            <Row className={"mt-2 mx-auto"}>
               <span className={styles.coursework}>Relevant Coursework</span>
             </Row>
-            <Row className={"mx-auto my-2 pl-0 "}>
-              <span className={styles.course + " mr-1 "}>
+            <Row className={"mx-auto mt-1 pl-0 "}>
+              <span className={styles.course + " mr-1 my-1"}>
                 AP Computer Science A
               </span>
-              <span className={styles.course + " mx-1 "}>AP Calculus BC</span>
-              <span className={styles.course + " mx-1 "}>
+              <span className={styles.course + " mx-1 my-1"}>
+                AP Calculus BC
+              </span>
+              <span className={styles.course + " mx-1 my-1"}>
                 Multivariable Calculus
               </span>
             </Row>
-            <Row className={"pt-2 mx-auto"}>
+            <Row className={"mt-2 mx-auto"}>
               <span className={styles.coursework}>Activities</span>
             </Row>
-            <Row className={"mx-auto my-2 pl-0 "}>
-              <span className={styles.course + " mr-1 "}>Math Club (Head)</span>
-              <span className={styles.course + " mx-1 "}>
+            <Row className={"mx-auto mt-1 pl-0 "}>
+              <span className={styles.course + " mr-1 my-1"}>
+                Math Club (Head)
+              </span>
+              <span className={styles.course + " mx-1 my-1"}>
                 Science Olympiad (Head)
               </span>
             </Row>

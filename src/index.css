@@ -18,6 +18,10 @@ code {
   min-height: 100vh;
 }
 
+.app_container {
+  max-width: 750px !important;
+}
+
 ::selection {
   background: #ff7c7c81;
 }

@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import PortfolioNavbar from "./components/Navbar";
 import { Element, scroller } from "react-scroll";
+import WindowDimensionsProvider from "./components/WindowDimensionsProvider";
 
 function App() {
   const [scroll, setScroll] = useState("");
@@ -26,23 +27,27 @@ function App() {
   }, [scroll]);
 
   return (
-    <div id="base">
-      <PortfolioNavbar setScroll={setScroll} />
-      <Home />
-      <Element name="education">
-        <Education />
-      </Element>
-      <Element name="skills">
-        <Skills />
-      </Element>
-      <Element name="experience">
-        <Experience />
-      </Element>
-      <Element name="projects">
-        <Projects />
-      </Element>
-      <Footer />
-    </div>
+    <WindowDimensionsProvider>
+      <div id="base">
+        <PortfolioNavbar setScroll={setScroll} />
+        <div className="app_container mx-auto px-2">
+          <Home />
+          <Element name="education">
+            <Education />
+          </Element>
+          <Element name="skills">
+            <Skills />
+          </Element>
+          <Element name="experience">
+            <Experience />
+          </Element>
+          <Element name="projects">
+            <Projects />
+          </Element>
+          <Footer />
+        </div>
+      </div>
+    </WindowDimensionsProvider>
   );
 }
 

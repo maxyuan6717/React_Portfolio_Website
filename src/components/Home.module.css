@@ -1,6 +1,5 @@
 .container {
-  max-width: 720px !important;
-  height: calc(100vh - 54px);
+  min-height: calc(100vh - 54px);
 }
 
 .home_content {
