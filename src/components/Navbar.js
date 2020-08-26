@@ -51,9 +51,8 @@ function PortfolioNavbar({ theme, toggleTheme, setScroll }) {
                   >
                     Projects
                   </div>
-                  <div className={styles.theme_toggle + " my-auto"}>
-                    <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-                  </div>
+
+                  <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
