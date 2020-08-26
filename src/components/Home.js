@@ -98,7 +98,7 @@ function Home({ is_mobile }) {
               </a>
             </Row>
           </Col>
-          <Col md={4} className="d-flex">
+          <Col md={4}>
             <img
               src={avatar}
               alt="Max Yuan"
