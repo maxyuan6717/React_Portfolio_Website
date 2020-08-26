@@ -3,9 +3,9 @@ import styles from "./Skills.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
 import ProgCircle from "./ProgCircle";
-import { useWindowDimensions } from "../components/WindowDimensionsProvider";
+import { useWindowDimensions } from "./WindowDimensionsProvider";
 
-function Skills() {
+function Skills({ is_mobile }) {
   const { width } = useWindowDimensions();
   let num_cols = 4;
   if (width < 768) num_cols = 2;
@@ -107,7 +107,10 @@ function Skills() {
   }
 
   return (
-    <Col className={styles.container + " p-0 mx-auto"}>
+    <Col
+      className={styles.container + " p-0 mx-auto"}
+      style={{ marginBottom: is_mobile ? "25px" : "" }}
+    >
       <Row className={styles.education_content + " mx-auto"}>
         <Col md={3} className={"section_header p-0 d-flex"}>
           <FadeInSection>SKILLS</FadeInSection>

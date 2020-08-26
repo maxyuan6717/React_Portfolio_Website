@@ -3,9 +3,12 @@ import styles from "./Projects.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
 
-function Projects() {
+function Projects({ is_mobile }) {
   return (
-    <Col className={styles.container + " p-0 mx-auto"}>
+    <Col
+      className={styles.container + " p-0 mx-auto"}
+      style={{ marginBottom: is_mobile ? "40px" : "" }}
+    >
       <Row className={" mx-auto"}>
         <Col md={3} className={"section_header p-0 d-flex"}>
           <FadeInSection>PROJECTS</FadeInSection>

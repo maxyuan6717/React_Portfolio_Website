@@ -3,9 +3,12 @@ import styles from "./Education.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
 
-function Education() {
+function Education({ is_mobile }) {
   return (
-    <Col className={styles.container + " p-0 mx-auto"}>
+    <Col
+      className={styles.container + " p-0 mx-auto"}
+      style={{ marginBottom: is_mobile ? "25px" : "" }}
+    >
       <FadeInSection>
         <Row className={styles.education_content + " mx-auto"}>
           <Col md={3} className={"section_header p-0"}>

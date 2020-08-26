@@ -8,15 +8,24 @@ import TypistLoop from "react-typist-loop";
 import "react-typist/dist/Typist.css";
 import { FaGithub, FaLinkedinIn, FaRegFilePdf } from "react-icons/fa";
 import avatar from "../images/avatar.jpg";
+import { useWindowDimensions } from "./WindowDimensionsProvider";
 // import resume from "../files/Max_Yuan_Resume.pdf";
 
-function Home() {
+function Home({ is_mobile }) {
   return (
     <Col className={styles.container + " p-0 mx-auto"}>
       <FadeInSection>
-        <Row className={styles.home_content + " mx-auto"}>
-          <Col md={8} className="p-0">
-            <Row className={styles.name + " mx-auto"}>
+        <Row
+          className={
+            (is_mobile ? styles.mobile_home_content : styles.home_content) +
+            " mx-auto"
+          }
+        >
+          <Col md={8} className="p-0 mb-4">
+            <Row
+              className={styles.name + " mx-auto"}
+              style={{ fontSize: is_mobile ? "50px" : "" }}
+            >
               <span className={styles.letter}>M</span>
               <span className={styles.letter}>A</span>
               <span className={styles.letter}>X</span>
@@ -26,7 +35,10 @@ function Home() {
               <span className={styles.letter}>A</span>
               <span className={styles.letter}>N</span>
             </Row>
-            <Row className={styles.description + " mx-auto"}>
+            <Row
+              className={styles.description + " mx-auto"}
+              style={{ fontSize: is_mobile ? "20px" : "" }}
+            >
               I do&nbsp;
               <TypistLoop interval={500}>
                 {["Web Development", "Competitive Programming", "Robotics"].map(

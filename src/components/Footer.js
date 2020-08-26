@@ -9,7 +9,7 @@ import {
   FaEnvelopeOpenText,
 } from "react-icons/fa";
 
-function Footer() {
+function Footer({ is_mobile }) {
   const btn_size = 16;
   return (
     <Col className={styles.container + " p-0 mx-auto"}>
