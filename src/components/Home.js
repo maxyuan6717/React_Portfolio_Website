@@ -8,7 +8,6 @@ import TypistLoop from "react-typist-loop";
 import "react-typist/dist/Typist.css";
 import { FaGithub, FaLinkedinIn, FaRegFilePdf } from "react-icons/fa";
 import avatar from "../images/avatar.jpg";
-import { useWindowDimensions } from "./WindowDimensionsProvider";
 // import resume from "../files/Max_Yuan_Resume.pdf";
 
 function Home({ is_mobile }) {
