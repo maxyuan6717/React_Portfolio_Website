@@ -4,10 +4,11 @@
 
 .scroll_to {
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   right: 20px;
   color: rgb(189, 189, 189);
   transform: translateY(0px);
+  padding-bottom: 10px;
   transition: 0.3s !important;
 }
 
