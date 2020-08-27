@@ -15,14 +15,14 @@ import { Fade } from "react-bootstrap";
 function PageContainer({ theme, toggleTheme }) {
   const [scroll, setScroll] = useState("");
   const { width, height } = useWindowDimensions();
-  const is_mobile = width <= 425;
+  const is_mobile = width < 576;
 
   useEffect(() => {
     if (scroll.length > 0) {
       scroller.scrollTo(scroll, {
         smooth: true,
         duration: 500,
-        offset: is_mobile ? -180 : -50,
+        offset: is_mobile ? -225 : -50,
       });
     }
     if (scroll !== "") setScroll("");
@@ -49,6 +49,7 @@ function PageContainer({ theme, toggleTheme }) {
         theme={theme}
         toggleTheme={toggleTheme}
         setScroll={setScroll}
+        is_mobile={is_mobile}
       />
       <div className={styles.container + " mx-auto px-2"}>
         <Element name="home">

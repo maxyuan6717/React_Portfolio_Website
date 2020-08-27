@@ -28,11 +28,7 @@ function Footer({ theme, is_mobile }) {
             href="https://github.com/maxyuan6717"
             target="_blank"
             rel="noopener noreferrer"
-            className={
-              styles.social_btn +
-              " mx-2 " +
-              (theme === "dark" ? styles.github_dark : styles.github)
-            }
+            className={styles.social_btn + " mx-2 " + styles.github}
           >
             <FaGithubAlt size={btn_size} className={styles.social_icon} />
           </a>

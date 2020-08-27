@@ -41,7 +41,7 @@ function Experience({ theme, is_mobile }) {
               }
             >
               <Col sm="auto" className="p-0">
-                Part-Time Software Engineer
+                Part-Time Software and DevOps Engineer
               </Col>
               <Col sm="auto" className="p-0">
                 August 2020 - Present

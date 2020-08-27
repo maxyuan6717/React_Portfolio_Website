@@ -4,7 +4,7 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
 import ThemeToggle from "./ThemeToggle";
 
-function PortfolioNavbar({ theme, toggleTheme, setScroll }) {
+function PortfolioNavbar({ theme, toggleTheme, setScroll, is_mobile }) {
   const [nav_expanded, setExpand] = useState(false);
 
   return (
@@ -15,11 +15,21 @@ function PortfolioNavbar({ theme, toggleTheme, setScroll }) {
             <Navbar
               expanded={nav_expanded}
               onToggle={(expanded) => setExpand(expanded)}
+              variant={theme === "dark" ? "dark" : "light"}
               // fixed="top"
-              expand="md"
+              expand="sm"
               className={styles.navbar}
             >
-              <Navbar.Brand></Navbar.Brand>
+              {is_mobile && (
+                <Navbar.Brand style={{ display: "flex" }}>
+                  <div
+                    style={{ marginLeft: "-.75rem", height: "24px" }}
+                    className="my-auto"
+                  >
+                    <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+                  </div>
+                </Navbar.Brand>
+              )}
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
               <Navbar.Collapse
@@ -51,8 +61,9 @@ function PortfolioNavbar({ theme, toggleTheme, setScroll }) {
                   >
                     Projects
                   </div>
-
-                  <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+                  {!is_mobile && (
+                    <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+                  )}
                 </Nav>
               </Navbar.Collapse>
             </Navbar>

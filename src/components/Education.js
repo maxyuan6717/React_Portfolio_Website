@@ -84,8 +84,6 @@ function Education({ theme, is_mobile }) {
               >
                 Microeconomics
               </span>
-            </Row>
-            <Row className={"mx-auto pl-0"}>
               <span
                 className={
                   (theme === "dark" ? styles.course_dark : styles.course) +

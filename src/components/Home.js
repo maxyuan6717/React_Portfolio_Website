@@ -25,7 +25,11 @@ function Home({ theme, is_mobile }) {
         >
           <Col md={8} className="p-0 mb-4">
             <Row
-              className={styles.name + " mx-auto"}
+              className={
+                styles.name +
+                " mx-auto " +
+                (is_mobile ? "justify-content-center" : "")
+              }
               style={{ fontSize: is_mobile ? "50px" : "" }}
             >
               <span className={styles.letter}>M</span>
@@ -38,7 +42,11 @@ function Home({ theme, is_mobile }) {
               <span className={styles.letter}>N</span>
             </Row>
             <Row
-              className={styles.description + " mx-auto"}
+              className={
+                styles.description +
+                " mx-auto " +
+                (is_mobile ? "justify-content-center" : "")
+              }
               style={{ fontSize: is_mobile ? "20px" : "" }}
             >
               I do&nbsp;
@@ -58,7 +66,7 @@ function Home({ theme, is_mobile }) {
               </TypistLoop>
             </Row>
             <Row className={styles.email + " mx-auto py-3"}>
-              <div>
+              <div className={is_mobile ? "text-center" : ""}>
                 Hi! I'm a sophomore studying CS/Econ at Yale. If you want to
                 connect, chat, or collaborate on a project, reach out to me
                 at&nbsp;
@@ -71,7 +79,11 @@ function Home({ theme, is_mobile }) {
                 .
               </div>
             </Row>
-            <Row className="mx-auto">
+            <Row
+              className={
+                "mx-auto " + (is_mobile ? "justify-content-center" : "")
+              }
+            >
               <a
                 href="https://github.com/maxyuan6717"
                 target="_blank"
@@ -79,9 +91,8 @@ function Home({ theme, is_mobile }) {
                 className={
                   styles.social_btn +
                   " pr-2 py-2 " +
-                  (theme === "dark"
-                    ? styles.github_dark + " " + styles.color_dark
-                    : styles.github)
+                  styles.github +
+                  (theme === "dark" ? " " + styles.color_dark : "")
                 }
                 title="Github"
               >

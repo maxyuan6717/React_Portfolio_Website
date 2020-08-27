@@ -34,14 +34,8 @@
 
 .github,
 .github:hover {
-  border-color: rgb(114, 1, 114);
-  color: rgb(114, 1, 114);
-}
-
-.github_dark,
-.github_dark:hover {
-  color: rgb(175, 0, 175);
-  border-color: rgb(175, 0, 175);
+  border-color: rgb(133, 29, 133);
+  color: rgb(133, 29, 133);
 }
 
 .linkedin,
