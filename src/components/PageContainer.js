@@ -22,7 +22,7 @@ function PageContainer({ theme, toggleTheme }) {
       scroller.scrollTo(scroll, {
         smooth: true,
         duration: 500,
-        offset: is_mobile ? -225 : -50,
+        offset: is_mobile ? -200 : -50,
       });
     }
     if (scroll !== "") setScroll("");
