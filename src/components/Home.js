@@ -14,7 +14,7 @@ function Home({ theme, is_mobile }) {
   return (
     <Col
       className={(is_mobile ? "" : styles.container) + " p-0 mx-auto"}
-      style={{ marginBottom: is_mobile ? "50px" : "" }}
+      style={{ marginBottom: is_mobile ? "75px" : "" }}
     >
       <FadeInSection>
         <Row
@@ -30,7 +30,7 @@ function Home({ theme, is_mobile }) {
                 " mx-auto " +
                 (is_mobile ? "justify-content-center" : "")
               }
-              style={{ fontSize: is_mobile ? "50px" : "" }}
+              style={{ fontSize: is_mobile ? "52px" : "" }}
             >
               <span className={styles.letter}>M</span>
               <span className={styles.letter}>A</span>
@@ -47,7 +47,7 @@ function Home({ theme, is_mobile }) {
                 " mx-auto " +
                 (is_mobile ? "justify-content-center" : "")
               }
-              style={{ fontSize: is_mobile ? "20px" : "" }}
+              style={{ fontSize: is_mobile ? "24px" : "" }}
             >
               I do&nbsp;
               <TypistLoop interval={500}>

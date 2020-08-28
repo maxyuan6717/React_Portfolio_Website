@@ -7,7 +7,7 @@ function Education({ theme, is_mobile }) {
   return (
     <Col
       className={styles.container + " p-0 mx-auto"}
-      style={{ marginBottom: is_mobile ? "25px" : "" }}
+      style={{ marginBottom: is_mobile ? "75px" : "" }}
     >
       <FadeInSection>
         <Row className={styles.education_content + " mx-auto"}>

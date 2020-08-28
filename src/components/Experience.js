@@ -7,7 +7,7 @@ function Experience({ theme, is_mobile }) {
   return (
     <Col
       className={styles.container + " p-0 mx-auto"}
-      style={{ marginBottom: is_mobile ? "25px" : "" }}
+      style={{ marginBottom: is_mobile ? "75px" : "" }}
     >
       <Row className={styles.experience_content + " mx-auto"}>
         <Col md={3} className={"section_header p-0"}>
