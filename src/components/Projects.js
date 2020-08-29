@@ -151,8 +151,8 @@ function Projects({ theme, is_mobile }) {
               order to solve complex coding challenges over the course of 3
               years. Currently a USACO Platinum Division contestant, 2-time
               Google Code Jam Round 2 Qualifier, and 5th place finisher at the
-              International ACSL All-Star Competition. These 2 repositories
-              contain my solutions to 600+ practice coding problems.
+              International ACSL All-Star Competition. This repository contains
+              my solutions to 600+ practice coding problems.
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-2 my-1"}>C/C++</div>
@@ -185,8 +185,8 @@ function Projects({ theme, is_mobile }) {
                 Designed, built, wired, and programmed a 6 DOF robot arm from
                 scratch. The robot arm mimics the movements of a smaller
                 controller arm and can be programmed to repeat a sequence of
-                movements. Documented the entire process in these 2 YouTube
-                videos:
+                movements. The entire design and build process is documented in
+                these 2 YouTube videos:
                 <a
                   href="https://www.youtube.com/watch?v=5SvWvZu7d08"
                   target="_blank"
