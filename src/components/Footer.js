@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Footer.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
+import resume from "../files/Max_Yuan_Resume_2020.pdf";
 import {
   FaGithubAlt,
   FaLinkedinIn,
@@ -9,7 +10,7 @@ import {
   FaEnvelopeOpenText,
 } from "react-icons/fa";
 
-function Footer({ theme, is_mobile }) {
+function Footer() {
   const btn_size = 16;
   return (
     <Col className={styles.container + " p-0 mx-auto"}>
@@ -18,6 +19,7 @@ function Footer({ theme, is_mobile }) {
           <a
             href="mailto: max.yuan@yale.edu"
             className={styles.social_btn + " mx-2 " + styles.email}
+            title="Email"
           >
             <FaEnvelopeOpenText
               size={btn_size}
@@ -29,6 +31,7 @@ function Footer({ theme, is_mobile }) {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.social_btn + " mx-2 " + styles.github}
+            title="Github"
           >
             <FaGithubAlt size={btn_size} className={styles.social_icon} />
           </a>
@@ -37,12 +40,19 @@ function Footer({ theme, is_mobile }) {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.social_btn + " mx-2 " + styles.linkedin}
+            title="LinkedIn"
           >
             <FaLinkedinIn size={btn_size} className={styles.social_icon} />
           </a>
-          <div className={styles.social_btn + " mx-2 " + styles.resume}>
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.social_btn + " mx-2 " + styles.resume}
+            title="Resume"
+          >
             <FaRegFilePdf size={btn_size} className={styles.social_icon} />
-          </div>
+          </a>
         </Row>
       </FadeInSection>
       <Row className="mx-auto mt-2">

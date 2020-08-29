@@ -38,17 +38,18 @@ function Projects({ theme, is_mobile }) {
             <Row className={styles.description + " mx-auto mt-2 mb-1"}>
               Collaborating with 10 other developers to maintain CourseTable, an
               intuitive course discovery platform that processes 1.5 million
-              requests from 6,000+ Yale students per semester. I contributed to
+              requests from 6,000+ Yale students per semester. Contributed to
               the back-end crawler that keeps the database populated with
-              updated course data, and I'm leading the development of the
-              ReactJS front-end web application (175+ commits and 6,000+ lines
-              of code).
+              updated course data. Leading the development of the ReactJS
+              front-end web application (175+ commits and 6,000+ lines of code).
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-2 my-1"}>ReactJS</div>
               <div className={"technology mr-2 my-1"}>HTML/CSS</div>
               <div className={"technology mr-2 my-1"}>Python</div>
               <div className={"technology mr-2 my-1"}>GraphQL</div>
+              <div className={"technology mr-2 my-1"}>Bootstrap</div>
+              <div className={"technology mr-2 my-1"}>Apollo Client</div>
               <div className={"technology mr-2 my-1"}>Hasura</div>
               <div className={"technology mr-2 my-1"}>Docker</div>
             </Row>
@@ -60,7 +61,7 @@ function Projects({ theme, is_mobile }) {
               }
             >
               <a
-                href="https://github.com/maxyuan6717/React_Portfolio_Website"
+                href="https://github.com/maxyuan6717/React_Portfolio_Website/tree/master"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={
@@ -76,8 +77,8 @@ function Projects({ theme, is_mobile }) {
             </Row>
 
             <Row className={styles.description + " mx-auto mt-2 mb-1"}>
-              I built this portfolio website from scratch using ReactJS,
-              HTML/CSS, and Bootstrap. CI/CD is implemented through Travis CI.
+              Built this portfolio website from scratch using ReactJS, HTML/CSS,
+              and Bootstrap. CI/CD is implemented through Travis CI.
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-2 my-1"}>ReactJS</div>
@@ -110,11 +111,11 @@ function Projects({ theme, is_mobile }) {
             <Row className={styles.description + " mx-auto mt-2 mb-1"}>
               Collaborated with one other developer to build GoodWork, an
               application that finds local volunteer opportunities involving
-              physical exercise to benefit both the community and the user. I
-              developed the back-end infrastructure that crawls the web for
-              volunteer opportunities, incorporates machine learning to select
-              opportunities that involve physical exercise, and then uses a
-              Firebase realtime database to store the results.
+              physical exercise to benefit both the community and the user.
+              Developed the back-end infrastructure that crawls the web for
+              volunteer opportunities, incorporates natural language processing
+              to select opportunities that involve physical exercise, and then
+              uses a Firebase realtime database to store the results.
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-2 my-1"}>Python</div>
@@ -146,15 +147,16 @@ function Projects({ theme, is_mobile }) {
               </a>
             </Row>
             <Row className={styles.description + " mx-auto mt-2 mb-1"}>
-              Over the course of 3 years, I learned and drilled various data
-              structures and algorithms in order to solve complex coding
-              challenges. I am a USACO Platinum Division contestant, 2-time
+              Learned and drilled various data structures and algorithms in
+              order to solve complex coding challenges over the course of 3
+              years. Currently a USACO Platinum Division contestant, 2-time
               Google Code Jam Round 2 Qualifier, and 5th place finisher at the
-              International ACSL All-Star Competition. These 2 repositories hold
-              my solutions to 600+ coding problems.
+              International ACSL All-Star Competition. These 2 repositories
+              contain my solutions to 600+ practice coding problems.
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-2 my-1"}>C/C++</div>
+              <div className={"technology mr-2 my-1"}>Java</div>
             </Row>
           </FadeInSection>
           <FadeInSection>
@@ -180,10 +182,11 @@ function Projects({ theme, is_mobile }) {
             </Row>
             <Row className={styles.description + " mx-auto mt-2 mb-1"}>
               <span>
-                I designed, built, wired, and programmed a 6 DOF robot arm from
+                Designed, built, wired, and programmed a 6 DOF robot arm from
                 scratch. The robot arm mimics the movements of a smaller
                 controller arm and can be programmed to repeat a sequence of
-                movements. I document the process in these 2 YouTube videos:
+                movements. Documented the entire process in these 2 YouTube
+                videos:
                 <a
                   href="https://www.youtube.com/watch?v=5SvWvZu7d08"
                   target="_blank"

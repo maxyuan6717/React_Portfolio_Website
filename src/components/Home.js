@@ -8,7 +8,7 @@ import TypistLoop from "react-typist-loop";
 import "react-typist/dist/Typist.css";
 import { FaGithub, FaLinkedinIn, FaRegFilePdf } from "react-icons/fa";
 import avatar from "../images/avatar.jpg";
-// import resume from "../files/Max_Yuan_Resume.pdf";
+import resume from "../files/Max_Yuan_Resume_2020.pdf";
 
 function Home({ theme, is_mobile }) {
   return (
@@ -113,8 +113,7 @@ function Home({ theme, is_mobile }) {
                 <FaLinkedinIn size={32} />
               </a>
               <a
-                // href={resume}
-                href="/"
+                href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={

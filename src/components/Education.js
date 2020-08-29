@@ -34,7 +34,7 @@ function Education({ theme, is_mobile }) {
               }
             >
               <Col sm="auto" className="p-0">
-                B.S. in Computer Science and Economics
+                B.S. in Computer Science and Economics | GPA: 4.0/4.0
               </Col>
               <Col sm="auto" className="p-0">
                 May 2023
@@ -156,7 +156,7 @@ function Education({ theme, is_mobile }) {
               }
             >
               <Col sm="auto" className="p-0">
-                High School Diploma
+                High School Diploma | GPA: 4.72/4.0
               </Col>
               <Col sm="auto" className="p-0">
                 June 2019
