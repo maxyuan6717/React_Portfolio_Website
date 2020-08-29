@@ -91,10 +91,10 @@ function Experience({ theme, is_mobile }) {
             <Row className="mx-auto">
               <div className={"technology mr-2 my-1"}>Python</div>
               <div className={"technology mr-2 my-1"}>REST API</div>
+              <div className={"technology mr-2 my-1"}>CI/CD</div>
               <div className={"technology mr-2 my-1"}>
                 AWS (IAM, EC2, S3, RDS, Lambda, QuickSight)
               </div>
-              <div className={"technology mr-2 my-1"}>CI/CD</div>
             </Row>
           </FadeInSection>
         </Col>
