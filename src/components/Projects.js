@@ -21,7 +21,7 @@ function Projects({ theme, is_mobile }) {
               }
             >
               <a
-                href="https://github.com/coursetable/coursetable/tree/redesign"
+                href="https://github.com/coursetable/coursetable"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={
@@ -36,12 +36,12 @@ function Projects({ theme, is_mobile }) {
               </a>
             </Row>
             <Row className={styles.description + " mx-auto mt-2 mb-1"}>
-              Collaborating with 10 other developers to maintain CourseTable, an
+              Collaborating with 5 other developers to maintain CourseTable, an
               intuitive course discovery platform that processes 1.5 million
               requests from 6,000+ Yale students per semester. Leading the
-              development of the ReactJS front-end web application (200+ commits
-              and 6,500+ lines of code). Contributed to the back-end crawler
-              that keeps the database populated with updated course data.
+              development of the ReactJS front-end web application with 200+
+              commits. Contributed to the back-end crawler that keeps the
+              database populated with updated course data.
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-2 my-1"}>ReactJS</div>
