@@ -8,6 +8,7 @@ import TypistLoop from "react-typist-loop";
 import "react-typist/dist/Typist.css";
 import { FaGithub, FaLinkedinIn, FaRegFilePdf } from "react-icons/fa";
 import avatar from "../images/avatar.jpg";
+import WaterWave from "react-water-wave";
 import resume from "../files/Max_Yuan_Resume_August_2020.pdf";
 
 function Home({ theme, is_mobile }) {
@@ -129,12 +130,17 @@ function Home({ theme, is_mobile }) {
             </Row>
           </Col>
           <Col md={4} style={{ minHeight: "200px" }}>
-            <img
-              src={avatar}
-              alt="Max Yuan"
-              width={200}
-              className={styles.avatar + " m-auto"}
-            />
+            <div className={styles.avatar + " m-auto"}>
+              <WaterWave
+                imageUrl={avatar}
+                perturbance={0.02}
+                dropRadius={5}
+                style={{
+                  width: "200px",
+                  height: "200px",
+                }}
+              />
+            </div>
           </Col>
         </Row>
       </FadeInSection>

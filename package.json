@@ -20,6 +20,7 @@
     "react-toggle": "^4.1.1",
     "react-typist": "^2.0.5",
     "react-typist-loop": "0.0.5",
+    "react-water-wave": "^1.0.5",
     "styled-components": "^5.1.1"
   },
   "scripts": {
