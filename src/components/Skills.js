@@ -32,15 +32,15 @@ function Skills({ theme, is_mobile }) {
         progress: 0.7,
       },
       {
-        text: "TypeScript",
+        text: "GraphQL",
         progress: 0.65,
       },
       {
-        text: "SQL",
+        text: "TypeScript",
         progress: 0.6,
       },
       {
-        text: "Swift",
+        text: "SQL",
         progress: 0.55,
       },
     ],
@@ -58,7 +58,7 @@ function Skills({ theme, is_mobile }) {
         progress: 0.65,
       },
       {
-        text: "UmiJS",
+        text: "NumPy",
         progress: 0.55,
       },
     ],
