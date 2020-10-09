@@ -56,11 +56,10 @@ function Experience({ theme, is_mobile }) {
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-2 my-1"}>ReactJS</div>
-              <div className={"technology mr-2 my-1"}>UmiJS</div>
               <div className={"technology mr-2 my-1"}>HTML/CSS</div>
               <div className={"technology mr-2 my-1"}>TypeScript</div>
               <div className={"technology mr-2 my-1"}>Java</div>
-              <div className={"technology mr-2 my-1"}>AWS</div>
+              <div className={"technology mr-2 my-1"}>AWS (RDS)</div>
               <div className={"technology mr-2 my-1"}>OIDC</div>
               <div className={"technology mr-2 my-1"}>Docker</div>
               <div className={"technology mr-2 my-1"}>CI/CD</div>
