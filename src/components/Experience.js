@@ -14,6 +14,7 @@ function Experience({ theme, is_mobile }) {
           <FadeInSection>EXPERIENCE</FadeInSection>
         </Col>
         <Col md={9} className="p-0">
+          {/* 8VC */}
           <FadeInSection>
             <Row
               className={
@@ -22,10 +23,80 @@ function Experience({ theme, is_mobile }) {
             >
               <Col sm="auto" className="p-0">
                 <a
+                  href="https://www.8vcfellowship.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.highlight_link} ${styles.vc}`}
+                >
+                  8VC
+                </a>
+              </Col>
+              <Col sm="auto" className="p-0">
+                TBD
+              </Col>
+            </Row>
+            <Row
+              className={
+                (theme === "dark" ? styles.position_dark : styles.position) +
+                " mx-auto justify-content-between mt-2"
+              }
+            >
+              <Col sm="auto" className="p-0">
+                Incoming Fellow
+              </Col>
+              <Col sm="auto" className="p-0">
+                Summer 2021
+              </Col>
+            </Row>
+          </FadeInSection>
+          {/* Gatsby */}
+          <FadeInSection>
+            <Row
+              className={
+                styles.company_name + " mx-auto mt-4 justify-content-between"
+              }
+            >
+              <Col sm="auto" className="p-0">
+                <a
+                  href="https://gatsbyevents.surge.sh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.highlight_link} ${styles.gatsby}`}
+                >
+                  Gatsby
+                </a>
+              </Col>
+              <Col sm="auto" className="p-0">
+                TBD
+              </Col>
+            </Row>
+            <Row
+              className={
+                (theme === "dark" ? styles.position_dark : styles.position) +
+                " mx-auto justify-content-between mt-2"
+              }
+            >
+              <Col sm="auto" className="p-0">
+                Incoming Software Engineering Intern
+              </Col>
+              <Col sm="auto" className="p-0">
+                Summer 2021
+              </Col>
+            </Row>
+          </FadeInSection>
+          {/* GST Part-Time */}
+          <FadeInSection>
+            <Row
+              className={
+                styles.company_name + " mx-auto justify-content-between mt-4"
+              }
+            >
+              <Col sm="auto" className="p-0">
+                <a
                   href="https://www.gstdev.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.highlight_link}
+                  className={`${styles.highlight_link} ${styles.gst}`}
                 >
                   Golden Section Technology
                 </a>
@@ -65,6 +136,7 @@ function Experience({ theme, is_mobile }) {
               <div className={"technology mr-2 my-1"}>CI/CD</div>
             </Row>
           </FadeInSection>
+          {/* GST Internship */}
           <FadeInSection>
             <Row
               className={
