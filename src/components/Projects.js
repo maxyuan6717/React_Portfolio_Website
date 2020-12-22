@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Projects.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
+import { BsLink45Deg } from "react-icons/bs";
 
 function Projects({ theme, is_mobile }) {
   return (
@@ -15,11 +16,7 @@ function Projects({ theme, is_mobile }) {
         </Col>
         <Col md={9} className="p-0">
           <FadeInSection>
-            <Row
-              className={
-                styles.project_name + " mx-auto justify-content-between"
-              }
-            >
+            <Row className={styles.project_name + " mx-auto"}>
               <a
                 href="https://github.com/coursetable/coursetable"
                 target="_blank"
@@ -34,24 +31,83 @@ function Projects({ theme, is_mobile }) {
               >
                 CourseTable
               </a>
+              <a
+                href="https://coursetable.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link_container + " my-auto ml-1"}
+              >
+                <BsLink45Deg
+                  className={styles.link_icon}
+                  style={{ display: "block" }}
+                  size={23}
+                />
+              </a>
             </Row>
             <Row className={styles.description + " mx-auto mt-2 mb-1"}>
-              Collaborating with 5 other developers to maintain CourseTable, an
-              intuitive course discovery platform that processes 1.5 million
-              requests from 6,000+ Yale students per semester. Leading the
-              development of the ReactJS front-end web application with 200+
-              commits. Contributed to the back-end crawler that keeps the
-              database populated with updated course data.
+              Collaborating with 11 other members to maintain and rebuild
+              CourseTable, an intuitive course discovery platform that processes
+              1.5 million requests from 6,000+ Yale students every semester.
+              Leading the development of the ReactJS front-end web application
+              with 500+ commits. Redesigned the website’s UI and UX to
+              significantly enhance its aesthetics and functionality.
+              Contributed to the back-end crawler that keeps the database
+              populated with updated course data.
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-2 my-1"}>ReactJS</div>
               <div className={"technology mr-2 my-1"}>HTML/CSS</div>
               <div className={"technology mr-2 my-1"}>Python</div>
-              <div className={"technology mr-2 my-1"}>GraphQL</div>
+              <div className={"technology mr-2 my-1"}>Node.js</div>
               <div className={"technology mr-2 my-1"}>Bootstrap</div>
-              <div className={"technology mr-2 my-1"}>Apollo Client</div>
+              <div className={"technology mr-2 my-1"}>GraphQL</div>
               <div className={"technology mr-2 my-1"}>Hasura</div>
               <div className={"technology mr-2 my-1"}>Docker</div>
+            </Row>
+          </FadeInSection>
+          <FadeInSection>
+            <Row className={styles.project_name + " mx-auto mt-4"}>
+              <a
+                href="https://github.com/kevinz917/holiday2020"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={
+                  styles.highlight_link +
+                  " " +
+                  (theme === "dark"
+                    ? styles.github_link_dark
+                    : styles.github_link)
+                }
+              >
+                YPost
+              </a>
+              <a
+                href="https://ypost.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link_container + " my-auto ml-1"}
+              >
+                <BsLink45Deg
+                  className={styles.link_icon}
+                  style={{ display: "block" }}
+                  size={23}
+                />
+              </a>
+            </Row>
+            <Row className={styles.description + " mx-auto mt-2 mb-1"}>
+              Collaborated with 2 other developers to build YPost, a platform
+              where you can send virtual holiday postcards to other Yalies. Over
+              800 postcards were sent within just the first 2 hours after
+              launching, and over 2,000 postcards have been sent since.
+            </Row>
+            <Row className="mx-auto">
+              <div className={"technology mr-2 my-1"}>ReactJS</div>
+              <div className={"technology mr-2 my-1"}>HTML/CSS</div>
+              <div className={"technology mr-2 my-1"}>Node.js</div>
+              <div className={"technology mr-2 my-1"}>MongoDB</div>
+              <div className={"technology mr-2 my-1"}>REST API</div>
+              <div className={"technology mr-2 my-1"}>Heroku</div>
+              <div className={"technology mr-2 my-1"}>CI/CD</div>
             </Row>
           </FadeInSection>
           <FadeInSection>
@@ -109,7 +165,7 @@ function Projects({ theme, is_mobile }) {
               </a>
             </Row>
             <Row className={styles.description + " mx-auto mt-2 mb-1"}>
-              Collaborated with one other developer to build GoodWork, an
+              Collaborated with 1 other developer to build GoodWork, an
               application that finds local volunteer opportunities involving
               physical exercise to benefit both the community and the user.
               Developed the back-end infrastructure that crawls the web for

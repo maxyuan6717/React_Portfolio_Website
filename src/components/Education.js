@@ -66,6 +66,14 @@ function Education({ theme, is_mobile }) {
                   " mr-2 my-1"
                 }
               >
+                Unsupervised Learning
+              </span>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-2 my-1"
+                }
+              >
                 Discrete Math
               </span>
               <span
@@ -82,22 +90,6 @@ function Education({ theme, is_mobile }) {
                   " mr-2 my-1"
                 }
               >
-                Microeconomics
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Unsupervised Learning
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
                 Probability & Statistics
               </span>
               <span
@@ -107,6 +99,14 @@ function Education({ theme, is_mobile }) {
                 }
               >
                 Macroeconomics
+              </span>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-2 my-1"
+                }
+              >
+                Microeconomics
               </span>
             </Row>
             <Row className={"mt-2 mx-auto"}>

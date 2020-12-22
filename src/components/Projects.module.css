@@ -12,6 +12,23 @@
   display: inline-flex;
 }
 
+.link_container {
+  border-radius: 100%;
+  padding: 3px;
+  display: flex;
+  transition: background-color 0.3s;
+}
+
+.link_container:hover {
+  cursor: pointer;
+  background-color: var(--highlight-color);
+}
+
+.link_icon {
+  margin: auto;
+  color: var(--blue-color);
+}
+
 .highlight_link {
   color: inherit;
   padding: 0px 2px;
