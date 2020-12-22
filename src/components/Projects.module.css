@@ -13,20 +13,19 @@
 }
 
 .link_container {
-  border-radius: 100%;
-  padding: 3px;
   display: flex;
-  transition: background-color 0.3s;
+  transition: color 0.1s;
+  color: inherit;
 }
 
 .link_container:hover {
   cursor: pointer;
-  background-color: var(--highlight-color);
+  color: var(--blue-color);
 }
 
 .link_icon {
   margin: auto;
-  color: var(--blue-color);
+  color: inherit;
 }
 
 .highlight_link {
