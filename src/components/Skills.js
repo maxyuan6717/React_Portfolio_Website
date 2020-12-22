@@ -32,7 +32,7 @@ function Skills({ theme, is_mobile }) {
         progress: 0.7,
       },
       {
-        text: "GraphQL",
+        text: "R",
         progress: 0.65,
       },
       {
@@ -54,11 +54,11 @@ function Skills({ theme, is_mobile }) {
         progress: 0.85,
       },
       {
-        text: "jQuery",
+        text: "Node.js",
         progress: 0.65,
       },
       {
-        text: "NumPy",
+        text: "PyTorch",
         progress: 0.55,
       },
     ],
@@ -72,12 +72,28 @@ function Skills({ theme, is_mobile }) {
         progress: 0.9,
       },
       {
-        text: "AWS",
+        text: "MERN Stack",
         progress: 0.75,
       },
       {
-        text: "Docker",
+        text: "AWS",
         progress: 0.65,
+      },
+      {
+        text: "Heroku",
+        progress: 0.65,
+      },
+      {
+        text: "CI/CD",
+        progress: 0.6,
+      },
+      {
+        text: "Neural Networks",
+        progress: 0.55,
+      },
+      {
+        text: "Docker",
+        progress: 0.5,
       },
     ],
   ];

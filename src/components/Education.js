@@ -98,14 +98,6 @@ function Education({ theme, is_mobile }) {
                   " mr-2 my-1"
                 }
               >
-                Economics & Computation
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
                 Probability & Statistics
               </span>
               <span
@@ -127,7 +119,7 @@ function Education({ theme, is_mobile }) {
                   " mr-1 my-1"
                 }
               >
-                Yale Computer Society (Dev Team)
+                Yale Computer Society (Lead Front-end Developer)
               </span>
             </Row>
           </Col>
