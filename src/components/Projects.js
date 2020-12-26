@@ -98,7 +98,7 @@ function Projects({ theme, is_mobile }) {
               Collaborated with 2 other developers to build YPost, a platform
               where you can send virtual holiday postcards to other Yalies. Over
               800 postcards were sent within just the first 2 hours after
-              launching, and over 2,000 postcards have been sent since.
+              launching, and over 10,000 postcards have been sent since.
             </Row>
             <Row className="mx-auto">
               <div className={"technology mr-2 my-1"}>ReactJS</div>
