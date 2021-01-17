@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Footer.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
-import resume from "../files/Max_Yuan_Resume_August_2020.pdf";
+import resume from "../files/Max_Yuan_Resume_January_2021.pdf";
 import {
   FaGithubAlt,
   FaLinkedinIn,

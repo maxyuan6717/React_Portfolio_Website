@@ -84,6 +84,51 @@ function Experience({ theme, is_mobile }) {
               </Col>
             </Row>
           </FadeInSection>
+          {/* Yale TA Position */}
+          <FadeInSection>
+            <Row
+              className={
+                styles.company_name + " mx-auto mt-4 justify-content-between"
+              }
+            >
+              <Col sm="auto" className="p-0">
+                <a
+                  href="https://www.krishnaswamylab.org/workshop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.highlight_link} ${styles.yale}`}
+                >
+                  Yale University
+                </a>
+              </Col>
+              <Col sm="auto" className="p-0">
+                Remote Work
+              </Col>
+            </Row>
+            <Row
+              className={
+                (theme === "dark" ? styles.position_dark : styles.position) +
+                " mx-auto justify-content-between mt-2"
+              }
+            >
+              <Col sm="auto" className="p-0">
+                Teaching Assistant
+              </Col>
+              <Col sm="auto" className="p-0">
+                January 2021 - Present
+              </Col>
+            </Row>
+            <Row className={styles.description + " mx-auto my-1"}>
+              Holding daily office hours for students enrolled in the “Machine
+              Learning for Single Cell Analysis” workshop. Guiding students
+              through Python implementations of various computational methods,
+              such as PCA, clustering, denoising, and neural networks.
+            </Row>
+            <Row className="mx-auto">
+              <div className={"technology mr-2 my-1"}>Python</div>
+              <div className={"technology mr-2 my-1"}>Google Colab</div>
+            </Row>
+          </FadeInSection>
           {/* GST Part-Time */}
           <FadeInSection>
             <Row
@@ -102,7 +147,7 @@ function Experience({ theme, is_mobile }) {
                 </a>
               </Col>
               <Col sm="auto" className="p-0">
-                Houston, TX
+                Remote Work
               </Col>
             </Row>
             <Row
