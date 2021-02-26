@@ -121,6 +121,14 @@ function Education({ theme, is_mobile }) {
               >
                 Yale Computer Society (Lead Front-end Developer)
               </span>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-1 my-1"
+                }
+              >
+                Urban Philanthropic Fund (Investment Team)
+              </span>
             </Row>
           </Col>
         </Row>

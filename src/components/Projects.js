@@ -111,6 +111,60 @@ function Projects({ theme, is_mobile }) {
             </Row>
           </FadeInSection>
           <FadeInSection>
+            <Row className={styles.project_name + " mx-auto mt-4"}>
+              <a
+                href="https://github.com/kevinz917/ship-client"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={
+                  styles.highlight_link +
+                  " " +
+                  (theme === "dark"
+                    ? styles.github_link_dark
+                    : styles.github_link)
+                }
+              >
+                Ship
+              </a>
+              <a
+                href="https://ship.wtf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link_container + " my-auto ml-1"}
+              >
+                <BsLink45Deg
+                  className={styles.link_icon}
+                  style={{ display: "block" }}
+                  size={23}
+                />
+              </a>
+            </Row>
+            <Row className={styles.description + " mx-auto mt-2 mb-1"}>
+              <span>
+                Collaborated with 1 other developer to build Ship, a dating
+                platform that allows students to be the matchmaker. 3k users
+                registered after 4 hours of launch and ~1.5k "ships" sailed.
+                <a
+                  href="https://yaledailynews.com/blog/2021/02/11/ship-lets-yalies-play-matchmaker-with-peers/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.highlight_link} ${styles.ydn} ml-1`}
+                >
+                  Featured on Yale Daily News
+                </a>
+              </span>
+            </Row>
+            <Row className="mx-auto">
+              <div className={"technology mr-2 my-1"}>ReactJS</div>
+              <div className={"technology mr-2 my-1"}>HTML/CSS</div>
+              <div className={"technology mr-2 my-1"}>Node.js</div>
+              <div className={"technology mr-2 my-1"}>MongoDB</div>
+              <div className={"technology mr-2 my-1"}>REST API</div>
+              <div className={"technology mr-2 my-1"}>Heroku</div>
+              <div className={"technology mr-2 my-1"}>CI/CD</div>
+            </Row>
+          </FadeInSection>
+          <FadeInSection>
             <Row
               className={
                 styles.project_name + " mx-auto justify-content-between mt-4"

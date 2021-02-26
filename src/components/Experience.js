@@ -93,12 +93,61 @@ function Experience({ theme, is_mobile }) {
             >
               <Col sm="auto" className="p-0">
                 <a
-                  href="https://www.krishnaswamylab.org/workshop"
+                  href="http://www.crockettlab.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${styles.highlight_link} ${styles.yale}`}
                 >
-                  Yale University
+                  Crockett Lab
+                </a>
+              </Col>
+              <Col sm="auto" className="p-0">
+                New Haven, CT
+              </Col>
+            </Row>
+            <Row
+              className={
+                (theme === "dark" ? styles.position_dark : styles.position) +
+                " mx-auto justify-content-between mt-2"
+              }
+            >
+              <Col sm="auto" className="p-0">
+                Research Assistant
+              </Col>
+              <Col sm="auto" className="p-0">
+                February 2021 - Present
+              </Col>
+            </Row>
+            <Row className={styles.description + " mx-auto my-1"}>
+              Using Natural Language Processing and Neural Networks to
+              investigate how moral outrage and hate speech are combined in
+              online outrage expression and the impact being flamed online has
+              on minority group members. Employing unique GAB and Twitter
+              corpora to adapt an existing neural network for outrage detection
+              to also detect hate speech, possibly revealing the features they
+              share.
+            </Row>
+            <Row className="mx-auto">
+              <div className={"technology mr-2 my-1"}>Python</div>
+              <div className={"technology mr-2 my-1"}>NLP</div>
+              <div className={"technology mr-2 my-1"}>Neural Nets</div>
+            </Row>
+          </FadeInSection>
+          {/* Yale TA Position */}
+          <FadeInSection>
+            <Row
+              className={
+                styles.company_name + " mx-auto mt-4 justify-content-between"
+              }
+            >
+              <Col sm="auto" className="p-0">
+                <a
+                  href="https://www.krishnaswamylab.org/workshop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.highlight_link} ${styles.ml_ta}`}
+                >
+                  Krishnaswamy Lab
                 </a>
               </Col>
               <Col sm="auto" className="p-0">
@@ -115,7 +164,7 @@ function Experience({ theme, is_mobile }) {
                 Teaching Assistant
               </Col>
               <Col sm="auto" className="p-0">
-                January 2021 - Present
+                January 2021
               </Col>
             </Row>
             <Row className={styles.description + " mx-auto my-1"}>
