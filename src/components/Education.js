@@ -66,7 +66,47 @@ function Education({ theme, is_mobile }) {
                   " mr-2 my-1"
                 }
               >
+                Intensive Algorithms
+              </span>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-2 my-1"
+                }
+              >
                 Unsupervised Learning
+              </span>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-2 my-1"
+                }
+              >
+                Deep Learning
+              </span>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-2 my-1"
+                }
+              >
+                Human-Computer Interaction
+              </span>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-2 my-1"
+                }
+              >
+                Cybersecurity
+              </span>
+              <span
+                className={
+                  (theme === "dark" ? styles.course_dark : styles.course) +
+                  " mr-2 my-1"
+                }
+              >
+                Game Theory
               </span>
               <span
                 className={
