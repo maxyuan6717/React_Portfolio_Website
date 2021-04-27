@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { useDarkMode } from "./components/UseDarkMode";
 import { GlobalStyles } from "./components/GlobalStyles";
 import { lightTheme, darkTheme } from "./components/Themes";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const [theme, themeToggler, mountedComponent] = useDarkMode();
@@ -16,7 +17,19 @@ function App() {
         <GlobalStyles />
         <WindowDimensionsProvider>
           <div id="base">
-            <PageContainer theme={theme} toggleTheme={themeToggler} />
+            <Router basename={process.env.PUBLIC_URL}>
+              <Switch>
+                <Route exact path="/zoom">
+                  {() => {
+                    window.location.href = "https://yale.zoom.us/j/2459116717";
+                    return <div />;
+                  }}
+                </Route>
+                <Route path="/">
+                  <PageContainer theme={theme} toggleTheme={themeToggler} />
+                </Route>
+              </Switch>
+            </Router>
           </div>
         </WindowDimensionsProvider>
       </>
