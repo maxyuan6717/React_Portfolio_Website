@@ -17,7 +17,7 @@ function App() {
         <GlobalStyles />
         <WindowDimensionsProvider>
           <div id="base">
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router>
               <Switch>
                 <Route exact path="/zoom">
                   {() => {

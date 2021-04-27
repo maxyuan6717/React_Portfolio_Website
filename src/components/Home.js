@@ -7,7 +7,7 @@ import Typist from "react-typist";
 import TypistLoop from "react-typist-loop";
 import "react-typist/dist/Typist.css";
 import { FaGithub, FaLinkedinIn, FaRegFilePdf } from "react-icons/fa";
-import avatar from "../images/avatar.jpg";
+import avatar from "../images/avatar.jpeg";
 import WaterWave from "react-water-wave";
 import resume from "../files/Max_Yuan_Resume_January_2021.pdf";
 
