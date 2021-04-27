@@ -32,7 +32,7 @@ function Experience({ theme, is_mobile }) {
                 </a>
               </Col>
               <Col sm="auto" className="p-0">
-                TBD
+                San Francisco, CA
               </Col>
             </Row>
             <Row
@@ -67,7 +67,7 @@ function Experience({ theme, is_mobile }) {
                 </a>
               </Col>
               <Col sm="auto" className="p-0">
-                TBD
+                San Francisco, CA
               </Col>
             </Row>
             <Row
