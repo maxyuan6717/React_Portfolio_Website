@@ -1,69 +1,63 @@
 import React from "react";
-import styles from "./Footer.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
-import resume from "../files/Max_Yuan_Resume_January_2021.pdf";
-import {
-  FaGithubAlt,
-  FaLinkedinIn,
-  FaRegFilePdf,
-  FaEnvelopeOpenText,
-} from "react-icons/fa";
+import styled from "styled-components";
+import { getSocials } from "../util/constants";
+import { StyledText } from "./styledcomponents";
+
+const StyledContainer = styled(Col)`
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+`;
+
+const StyledIcon = styled.a`
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: 0.3s;
+  border-color: ${({ color }) => color};
+  color: ${({ color }) => color};
+  margin: 0 0.5rem;
+
+  &:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    color: ${({ color }) => color};
+  }
+`;
+
+const StyledName = styled.span`
+  color: ${({ theme }) => theme.blue_color};
+`;
 
 function Footer() {
   const btn_size = 16;
   return (
-    <Col className={styles.container + " p-0 mx-auto"}>
+    <StyledContainer>
       <FadeInSection>
         <Row className="mx-auto justify-content-center">
-          <a
-            href="mailto: max.yuan@yale.edu"
-            className={styles.social_btn + " mx-2 " + styles.email}
-            title="Email"
-          >
-            <FaEnvelopeOpenText
-              size={btn_size}
-              className={styles.social_icon}
-            />
-          </a>
-          <a
-            href="https://github.com/maxyuan6717"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.social_btn + " mx-2 " + styles.github}
-            title="Github"
-          >
-            <FaGithubAlt size={btn_size} className={styles.social_icon} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/max-yuan-209930194/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.social_btn + " mx-2 " + styles.linkedin}
-            title="LinkedIn"
-          >
-            <FaLinkedinIn size={btn_size} className={styles.social_icon} />
-          </a>
-          <a
-            href={resume}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.social_btn + " mx-2 " + styles.resume}
-            title="Resume"
-          >
-            <FaRegFilePdf size={btn_size} className={styles.social_icon} />
-          </a>
+          {getSocials(16).map((social) => (
+            <StyledIcon
+              href={social.href}
+              color={social.color}
+              title={social.title}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {social.icon}
+            </StyledIcon>
+          ))}
         </Row>
       </FadeInSection>
-      <Row className="mx-auto mt-2">
-        <div className={styles.footer_text + " mx-auto"}>
+      <Row className="mx-auto mt-2 justify-content-center">
+        <StyledText size="16">
           <FadeInSection>
-            Designed and Developed by{" "}
-            <span className={styles.name}>Max Yuan</span>
+            Designed and Developed by <StyledName>Max Yuan</StyledName>
           </FadeInSection>
-        </div>
+        </StyledText>
       </Row>
-    </Col>
+    </StyledContainer>
   );
 }
 

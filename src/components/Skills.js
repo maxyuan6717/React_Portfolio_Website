@@ -1,102 +1,20 @@
 import React from "react";
-import styles from "./Skills.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
 import ProgCircle from "./ProgCircle";
 import { useWindowDimensions } from "./WindowDimensionsProvider";
+import { skills } from "../util/constants";
+import {
+  StyledSectionContainer,
+  StyledSectionHeader,
+  StyledText,
+} from "./styledcomponents";
 
-function Skills({ theme, is_mobile }) {
+function Skills({ theme }) {
   const { width } = useWindowDimensions();
   let num_cols = 4;
   if (width < 768) num_cols = 2;
-  const skills = [
-    [
-      {
-        text: "C/C++",
-        progress: 0.9,
-      },
-      {
-        text: "Python",
-        progress: 0.87,
-      },
-      {
-        text: "JavaScript",
-        progress: 0.85,
-      },
-      {
-        text: "HTML/CSS",
-        progress: 0.85,
-      },
-      {
-        text: "Java",
-        progress: 0.7,
-      },
-      {
-        text: "R",
-        progress: 0.65,
-      },
-      {
-        text: "TypeScript",
-        progress: 0.6,
-      },
-      {
-        text: "SQL",
-        progress: 0.55,
-      },
-    ],
-    [
-      {
-        text: "ReactJS",
-        progress: 0.85,
-      },
-      {
-        text: "Bootstrap",
-        progress: 0.85,
-      },
-      {
-        text: "Node.js",
-        progress: 0.65,
-      },
-      {
-        text: "PyTorch",
-        progress: 0.55,
-      },
-    ],
-    [
-      {
-        text: "Git",
-        progress: 0.9,
-      },
-      {
-        text: "REST API",
-        progress: 0.9,
-      },
-      {
-        text: "MERN Stack",
-        progress: 0.75,
-      },
-      {
-        text: "AWS",
-        progress: 0.65,
-      },
-      {
-        text: "Heroku",
-        progress: 0.65,
-      },
-      {
-        text: "CI/CD",
-        progress: 0.6,
-      },
-      {
-        text: "Neural Networks",
-        progress: 0.55,
-      },
-      {
-        text: "Docker",
-        progress: 0.5,
-      },
-    ],
-  ];
+
   let html = [[], [], []];
   for (let i = 0; i < 3; i++) {
     const section = skills[i];
@@ -122,39 +40,33 @@ function Skills({ theme, is_mobile }) {
       );
     }
   }
+  const headers = [
+    "Languages",
+    "Frameworks/Libraries",
+    "Technologies/Concepts",
+  ];
 
   return (
-    <Col
-      className={styles.container + " p-0 mx-auto"}
-      style={{ marginBottom: is_mobile ? "75px" : "" }}
-    >
-      <Row className={styles.education_content + " mx-auto"}>
-        <Col md={3} className={"section_header p-0 d-flex"}>
+    <StyledSectionContainer>
+      <Row className={"mx-auto"}>
+        <StyledSectionHeader md={3}>
           <FadeInSection>SKILLS</FadeInSection>
-        </Col>
+        </StyledSectionHeader>
 
         <Col md={9} className="p-0">
-          <Row className="mx-auto">
-            <span className={styles.skills_header + " mx-auto"}>
-              <FadeInSection>Languages</FadeInSection>
-            </span>
-          </Row>
-          {html[0]}
-          <Row className="mx-auto mt-4">
-            <span className={styles.skills_header + " mx-auto"}>
-              <FadeInSection>Frameworks/Libraries</FadeInSection>
-            </span>
-          </Row>
-          {html[1]}
-          <Row className="mx-auto mt-4">
-            <span className={styles.skills_header + " mx-auto"}>
-              <FadeInSection>Technologies/Concepts</FadeInSection>
-            </span>
-          </Row>
-          {html[2]}
+          {headers.map((header, index) => (
+            <>
+              <Row className="mx-auto">
+                <StyledText className="mx-auto" size="20">
+                  <FadeInSection>{header}</FadeInSection>
+                </StyledText>
+              </Row>
+              {html[index]}
+            </>
+          ))}
         </Col>
       </Row>
-    </Col>
+    </StyledSectionContainer>
   );
 }
 

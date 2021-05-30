@@ -1,261 +1,75 @@
 import React from "react";
-import styles from "./Education.module.css";
 import { Row, Col } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
+import {
+  StyledSectionContainer,
+  StyledSectionHeader,
+  StyledText,
+} from "./styledcomponents";
+import { educations } from "../util/constants";
+import styled from "styled-components";
 
-function Education({ theme, is_mobile }) {
+const StyledBubble = styled.span`
+  color: ${({ theme }) => theme.text[1]};
+  background-color: ${({ theme }) => theme.surface[1]};
+  border-radius: 8px;
+  padding: 6px;
+  margin: 0.25rem 0.5rem 0.25rem 0;
+  font-size: 13px;
+  transition: 1s;
+`;
+
+function Education() {
   return (
-    <Col
-      className={styles.container + " p-0 mx-auto"}
-      style={{ marginBottom: is_mobile ? "75px" : "" }}
-    >
-      <FadeInSection>
-        <Row className={styles.education_content + " mx-auto"}>
-          <Col md={3} className={"section_header p-0"}>
-            EDUCATION
-          </Col>
-          <Col md={9} className="p-0">
-            <Row
-              className={
-                styles.school_name + " mx-auto justify-content-between"
-              }
-            >
-              <Col sm="auto" className="p-0">
-                Yale University
-              </Col>
-              <Col sm="auto" className="p-0">
-                New Haven, CT
-              </Col>
-            </Row>
-            <Row
-              className={
-                (theme === "dark" ? styles.degree_dark : styles.degree) +
-                " mx-auto justify-content-between"
-              }
-            >
-              <Col sm="auto" className="p-0">
-                B.S. in Computer Science and Economics | GPA: 4.0/4.0
-              </Col>
-              <Col sm="auto" className="p-0">
-                May 2023
-              </Col>
-            </Row>
-            <Row className={"mt-2 mx-auto justify-content-between"}>
-              <span className={styles.coursework}>Relevant Coursework</span>
-            </Row>
-            <Row className={"mx-auto mt-1 pl-0 "}>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Data Structures
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Systems Programming
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Intensive Algorithms
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Unsupervised Learning
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Deep Learning
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Human-Computer Interaction
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Cybersecurity
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Game Theory
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Discrete Math
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Linear Algebra
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Probability & Statistics
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Macroeconomics
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Microeconomics
-              </span>
-            </Row>
-            <Row className={"mt-2 mx-auto"}>
-              <span className={styles.coursework}>Activities</span>
-            </Row>
-            <Row className={"mx-auto mt-1 pl-0 "}>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-1 my-1"
-                }
-              >
-                Yale Computer Society (Lead Front-end Developer)
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-1 my-1"
-                }
-              >
-                Urban Philanthropic Fund (Investment Team)
-              </span>
-            </Row>
-          </Col>
-        </Row>
-      </FadeInSection>
-      <FadeInSection>
-        <Row className={styles.education_content + " mx-auto my-5"}>
-          <Col md={3} className={styles.section_header + " p-0"}></Col>
-          <Col md={9} className="p-0">
-            <Row
-              className={
-                styles.school_name + " mx-auto justify-content-between"
-              }
-            >
-              <Col sm="auto" className="p-0">
-                The Seven Hills School
-              </Col>
-              <Col sm="auto" className="p-0">
-                Cincinnati, OH
-              </Col>
-            </Row>
-            <Row
-              className={
-                (theme === "dark" ? styles.degree_dark : styles.degree) +
-                " mx-auto justify-content-between"
-              }
-            >
-              <Col sm="auto" className="p-0">
-                High School Diploma | GPA: 4.72/4.0
-              </Col>
-              <Col sm="auto" className="p-0">
-                June 2019
-              </Col>
-            </Row>
-            <Row className={"mt-2 mx-auto"}>
-              <span className={styles.coursework}>Relevant Coursework</span>
-            </Row>
-            <Row className={"mx-auto mt-1 pl-0 "}>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-1 my-1"
-                }
-              >
-                AP Computer Science A
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                AP Calculus BC
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Multivariable Calculus
-              </span>
-            </Row>
-            <Row className={"mt-2 mx-auto"}>
-              <span className={styles.coursework}>Activities</span>
-            </Row>
-            <Row className={"mx-auto mt-1 pl-0 "}>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-1 my-1"
-                }
-              >
-                Math Club (Head)
-              </span>
-              <span
-                className={
-                  (theme === "dark" ? styles.course_dark : styles.course) +
-                  " mr-2 my-1"
-                }
-              >
-                Science Olympiad (Head)
-              </span>
-            </Row>
-          </Col>
-        </Row>
-      </FadeInSection>
-    </Col>
+    <StyledSectionContainer>
+      {educations.map((ed, index) => (
+        <FadeInSection>
+          <Row className="mx-auto mb-5">
+            <StyledSectionHeader md={3}>
+              {index === 0 ? "EDUCATION" : ""}
+            </StyledSectionHeader>
+            <Col md={9} className="p-0">
+              <Row className="mx-auto justify-content-between">
+                <Col sm="auto" className="p-0">
+                  <StyledText size="20">{ed.name}</StyledText>
+                </Col>
+                <Col sm="auto" className="p-0">
+                  <StyledText size="20">{ed.loc}</StyledText>
+                </Col>
+              </Row>
+              <Row className="mx-auto justify-content-between">
+                <Col sm="auto" className="p-0">
+                  <StyledText
+                    secondary
+                  >{`${ed.degree} | GPA: ${ed.gpa}/4.0`}</StyledText>
+                </Col>
+                <Col sm="auto" className="p-0">
+                  <StyledText secondary>{ed.date}</StyledText>
+                </Col>
+              </Row>
+              <Row className="mt-2 mx-auto">
+                <span style={{ borderBottom: "1px solid" }}>
+                  Relevant Coursework
+                </span>
+              </Row>
+              <Row className="mx-auto mt-1">
+                {ed.courses.map((course) => (
+                  <StyledBubble>{course}</StyledBubble>
+                ))}
+              </Row>
+              <Row className="mt-2 mx-auto">
+                <span style={{ borderBottom: "1px solid" }}>Activities</span>
+              </Row>
+              <Row className="mx-auto mt-1">
+                {ed.activities.map((activity) => (
+                  <StyledBubble>{activity}</StyledBubble>
+                ))}
+              </Row>
+            </Col>
+          </Row>
+        </FadeInSection>
+      ))}
+    </StyledSectionContainer>
   );
 }
 

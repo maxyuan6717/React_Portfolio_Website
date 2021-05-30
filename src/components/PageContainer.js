@@ -9,8 +9,30 @@ import PortfolioNavbar from "./Navbar";
 import { Element, scroller, animateScroll } from "react-scroll";
 import { useWindowDimensions } from "./WindowDimensionsProvider";
 import { AiOutlineArrowUp } from "react-icons/ai";
-import styles from "./PageContainer.module.css";
 import { Fade } from "react-bootstrap";
+import styled from "styled-components";
+
+const StyledContainer = styled.div`
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 0 0.5rem;
+`;
+
+const StyledScrollTop = styled.div`
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  color: rgb(189, 189, 189);
+  transform: translateY(0px);
+  padding-bottom: 10px;
+  transition: 0.3s !important;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--blue-color);
+    transform: translateY(-10px);
+  }
+`;
 
 function PageContainer({ theme, toggleTheme }) {
   const [scroll, setScroll] = useState("");
@@ -51,29 +73,29 @@ function PageContainer({ theme, toggleTheme }) {
         setScroll={setScroll}
         is_mobile={is_mobile}
       />
-      <div className={styles.container + " mx-auto px-2"}>
+      <StyledContainer>
         <Element name="home">
-          <Home theme={theme} is_mobile={is_mobile} />
+          <Home />
         </Element>
         <Element name="education">
-          <Education theme={theme} is_mobile={is_mobile} />
+          <Education />
         </Element>
         <Element name="skills">
-          <Skills theme={theme} is_mobile={is_mobile} />
+          <Skills theme={theme} />
         </Element>
         <Element name="experience">
-          <Experience theme={theme} is_mobile={is_mobile} />
+          <Experience />
         </Element>
         <Element name="projects">
-          <Projects theme={theme} is_mobile={is_mobile} />
+          <Projects theme={theme} />
         </Element>
-        <Footer theme={theme} />
-      </div>
+        <Footer />
+      </StyledContainer>
       {!is_mobile && (
         <Fade in={scroll_visible} unmountOnExit={true}>
-          <div className={styles.scroll_to} onClick={scrollTop}>
+          <StyledScrollTop onClick={scrollTop}>
             <AiOutlineArrowUp size={25} />
-          </div>
+          </StyledScrollTop>
         </Fade>
       )}
     </>
