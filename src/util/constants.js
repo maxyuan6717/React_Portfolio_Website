@@ -12,7 +12,7 @@ import {
   FaRegFilePdf,
   FaEnvelopeOpenText,
 } from "react-icons/fa";
-import resume from "../files/Max_Yuan_Resume_January_2021.pdf";
+import resume from "../files/Max_Yuan_Resume_Aug_2021.pdf";
 
 export const getSocials = (size) => {
   return [
@@ -182,7 +182,8 @@ export const experiences = [
     link: "https://www.8vcfellowship.com/",
     title: "Fellow",
     date: "Summer 2021",
-    description: "",
+    description:
+      "1 of 35 fellows selected to engage with Palantir Co-Founder Joe Lonsdale and other founders across the 8VC network on a weekly basis for 10 weeks. Discussed how early stage startups scale in industries like deep tech, biotech, and consumer.",
     techs: [],
   },
   {
@@ -192,7 +193,8 @@ export const experiences = [
     link: "https://gatsby.events/",
     title: "Software Engineering Intern",
     date: "Summer 2021",
-    description: "",
+    description:
+      "Built 20+ novel, full-stack features using TypeScript, GraphQL, and MongoDB to provide investors with an end-to-end event planning tool that cultivates meaningful relationships. Contributed 50+ pull requests and 7K+ new lines of code in 12 weeks.",
     techs: [],
   },
   {
@@ -271,7 +273,8 @@ export const projects = [
     github: "https://github.com/maxyuan6717/orpheus-frontend",
     site: "https://orpheuspledge.org/",
     tech: ["ReactJS", "HTML/CSS", "Node.js", "MongoDB"],
-    description: "TBD",
+    description:
+      "Built entire full-stack web app (MERN) for a 21-day, CBT-backed digital mindfulness platform that amassed 400+ downloads within the first week of launch. Was 1 of 15 ventures accepted to Yale’s S21 Tsai CITY Accelerator and received the Student Catalyst Award. Also featured in Contrary Capital Lightning Talks, MIT Medical Podcast, Yale Herald, and Study Breaks Magazine.",
   },
   {
     src: ship_bg,
@@ -280,7 +283,7 @@ export const projects = [
     site: "https://www.ship.wtf/login",
     tech: ["ReactJS", "HTML/CSS", "Node.js", "MongoDB"],
     description:
-      'Collaborated with 1 other developer to build Ship, a dating platform that allows students to be the matchmaker. 3k users registered after 4 hours of launch and ~1.5k "ships" sailed.',
+      'Collaborated with 1 other developer to build Ship, a dating platform that allows students to be the matchmaker. Over half of Yale\'s undergrads registered within 4 hours of launch, and ~1.5k "ships" sailed.',
   },
   {
     src: ypost_bg,
@@ -289,32 +292,32 @@ export const projects = [
     site: "https://ypost.app/",
     tech: ["ReactJS", "HTML/CSS", "Node.js", "MongoDB"],
     description:
-      "Collaborated with 2 other developers to build YPost, a platform where you can send virtual holiday postcards to other Yalies. Over 800 postcards were sent within just the first 2 hours after launching, and over 10,000 postcards have been sent since.",
+      "Collaborated with 1 other developer to build YPost, a platform where you can send virtual holiday postcards to other Yalies. Over 800 postcards were sent within just the first 2 hours after launching, and over 11,000 postcards have been sent since.",
   },
-  {
-    src: wli_bg,
-    name: "WLI Capsule",
-    github: "https://github.com/maxyuan6717/wli-frontend",
-    site: "https://capsule.yalewli.org/",
-    tech: ["ReactJS", "HTML/CSS", "Node.js", "MongoDB"],
-    description: "TBD",
-  },
-  {
-    src: nodicehelp_bg,
-    name: "WYBC Issue 27",
-    github: "https://github.com/maxyuan6717/wybc-8ball",
-    site: "https://nodicehelp.live/",
-    tech: ["ReactJS", "HTML/CSS"],
-    description: "TBD",
-  },
-  {
-    src: podcast_bg,
-    name: "Pass the Mic",
-    github: "https://github.com/maxyuan6717/wybc-podcast",
-    site: "https://wybcpodcast.com/",
-    tech: ["ReactJS", "HTML/CSS"],
-    description: "TBD",
-  },
+  // {
+  //   src: wli_bg,
+  //   name: "WLI Capsule",
+  //   github: "https://github.com/maxyuan6717/wli-frontend",
+  //   site: "https://capsule.yalewli.org/",
+  //   tech: ["ReactJS", "HTML/CSS", "Node.js", "MongoDB"],
+  //   description: "TBD",
+  // },
+  // {
+  //   src: nodicehelp_bg,
+  //   name: "WYBC Issue 27",
+  //   github: "https://github.com/maxyuan6717/wybc-8ball",
+  //   site: "https://nodicehelp.live/",
+  //   tech: ["ReactJS", "HTML/CSS"],
+  //   description: "TBD",
+  // },
+  // {
+  //   src: podcast_bg,
+  //   name: "Pass the Mic",
+  //   github: "https://github.com/maxyuan6717/wybc-podcast",
+  //   site: "https://wybcpodcast.com/",
+  //   tech: ["ReactJS", "HTML/CSS"],
+  //   description: "TBD",
+  // },
   {
     src: null,
     name: "React Portfolio Website",

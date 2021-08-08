@@ -1,4 +1,5 @@
 export const lightTheme = {
+  theme: "light",
   surface: ["#FFF", "#e1e1e1", "#FFF"],
   text: ["#363537", "#646464"],
   blue: "#3273dc",
@@ -7,7 +8,8 @@ export const lightTheme = {
   red: "#CA0101",
 };
 export const darkTheme = {
-  surface: ["#121212", "#323232", "#404040"],
+  theme: "dark",
+  surface: ["#121212", "#323232", "#242424"],
   text: ["#FAFAFA", "#c8c8c8"],
   blue: "#75a3eb",
   green: "#70e680",

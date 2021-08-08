@@ -10,7 +10,10 @@ const StyledCard = styled.div`
   width: ${({ width }) => `${width}px`};
   border-radius: 8px;
   padding: 0px;
-  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  ${({ theme }) =>
+    theme.theme === "light"
+      ? "box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;"
+      : ""}
   background-color: ${({ theme }) => theme.surface[2]};
   margin: 0px 0px 50px 0px;
   overflow: hidden;
