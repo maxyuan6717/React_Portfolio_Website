@@ -11,6 +11,7 @@ import { useWindowDimensions } from "./WindowDimensionsProvider";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { Fade } from "react-bootstrap";
 import styled from "styled-components";
+import ReactGA from "react-ga";
 
 const StyledContainer = styled.div`
   margin: 0 auto;
@@ -38,6 +39,11 @@ function PageContainer({ theme, toggleTheme }) {
   const [scroll, setScroll] = useState("");
   const { width, height } = useWindowDimensions();
   const is_mobile = width < 576;
+
+  useEffect(() => {
+    ReactGA.set({ page: "/" });
+    ReactGA.pageview("/");
+  }, []);
 
   useEffect(() => {
     if (scroll.length > 0) {

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { trackGA } from "../util/functions";
 import "./FadeInSection.css";
 
 function FadeInSection(props) {
@@ -14,6 +15,13 @@ function FadeInSection(props) {
     });
     observer.observe(domRef.current);
   }, [isVisible, props]);
+
+  useEffect(() => {
+    if (isVisible && props.section) {
+      trackGA("Section Views", `Viewed ${props.section}`);
+    }
+  }, [isVisible, props.section]);
+
   return (
     <div
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}

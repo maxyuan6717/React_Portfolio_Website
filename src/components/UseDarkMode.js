@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { trackGA } from "../util/functions";
+
 export const useDarkMode = () => {
   const [theme, setTheme] = useState("light");
   const [mountedComponent, setMountedComponent] = useState(false);
@@ -9,7 +11,8 @@ export const useDarkMode = () => {
   };
 
   const themeToggler = () => {
-    theme === "light" ? setMode("dark") : setMode("light");
+    setMode(theme === "light" ? "dark" : "light");
+    trackGA("Theme", `Switch to ${theme === "light" ? "dark" : "light"} mode`);
   };
 
   useEffect(() => {

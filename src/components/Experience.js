@@ -9,17 +9,18 @@ import {
   StyledLink,
 } from "./styledcomponents";
 import { experiences } from "../util/constants";
+import { trackGA } from "../util/functions";
 
 function Experience() {
   return (
     <StyledSectionContainer>
       <Row className="mx-auto">
         <StyledSectionHeader md={3}>
-          <FadeInSection>EXPERIENCE</FadeInSection>
+          <FadeInSection section="experience">EXPERIENCE</FadeInSection>
         </StyledSectionHeader>
         <Col md={9} className="p-0">
-          {experiences.map((exp) => (
-            <FadeInSection>
+          {experiences.map((exp, index) => (
+            <FadeInSection key={index}>
               {exp.name && (
                 <Row className="mx-auto justify-content-between">
                   <Col sm="auto" className="p-0">
@@ -29,6 +30,9 @@ function Experience() {
                         color={exp.color}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() =>
+                          trackGA("Experience", `View ${exp.name}`)
+                        }
                       >
                         {exp.name}
                       </StyledLink>
@@ -57,8 +61,8 @@ function Experience() {
                 <StyledText size="16">{exp.description}</StyledText>
               </Row>
               <Row className="mx-auto mb-4">
-                {exp.techs.map((tech) => (
-                  <StyledTech>{tech}</StyledTech>
+                {exp.techs.map((tech, index) => (
+                  <StyledTech key={index}>{tech}</StyledTech>
                 ))}
               </Row>
             </FadeInSection>

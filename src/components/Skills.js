@@ -50,19 +50,19 @@ function Skills({ theme }) {
     <StyledSectionContainer>
       <Row className={"mx-auto"}>
         <StyledSectionHeader md={3}>
-          <FadeInSection>SKILLS</FadeInSection>
+          <FadeInSection section="skills">SKILLS</FadeInSection>
         </StyledSectionHeader>
 
         <Col md={9} className="p-0">
           {headers.map((header, index) => (
-            <>
+            <React.Fragment key={index}>
               <Row className="mx-auto">
                 <StyledText className="mx-auto" size="20">
                   <FadeInSection>{header}</FadeInSection>
                 </StyledText>
               </Row>
               {html[index]}
-            </>
+            </React.Fragment>
           ))}
         </Col>
       </Row>

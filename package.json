@@ -1,7 +1,7 @@
 {
   "name": "react_portfolio_website",
   "version": "0.1.0",
-  "private": true,  
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -10,6 +10,7 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.13.1",
+    "react-ga": "^3.3.0",
     "react-icons": "^3.11.0",
     "react-particle-image": "^1.0.1",
     "react-progressbar.js": "^0.2.0",

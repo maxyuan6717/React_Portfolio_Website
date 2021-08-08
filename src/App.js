@@ -7,6 +7,10 @@ import { GlobalStyles } from "./components/GlobalStyles";
 import { lightTheme, darkTheme } from "./components/Themes";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import ReactGA from "react-ga";
+
+ReactGA.initialize(process.env.REACT_APP_GA);
+
 function App() {
   const [theme, themeToggler, mountedComponent] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;

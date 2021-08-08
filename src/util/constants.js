@@ -18,25 +18,25 @@ export const getSocials = (size) => {
   return [
     {
       href: "mailto: max.yuan@yale.edu",
-      color: "rgb(31, 160, 49)",
+      color: "green",
       title: "Email",
       icon: <FaEnvelopeOpenText size={size} style={{ display: "block" }} />,
     },
     {
       href: "https://github.com/maxyuan6717",
-      color: "rgb(133, 29, 133)",
+      color: "purple",
       title: "Github",
       icon: <FaGithub size={size} style={{ display: "block" }} />,
     },
     {
-      href: "https://www.linkedin.com/in/max-yuan-209930194/",
-      color: "rgb(0, 140, 255)",
+      href: "https://www.linkedin.com/in/max-yuan/",
+      color: "blue",
       title: "LinkedIn",
       icon: <FaLinkedinIn size={size} style={{ display: "block" }} />,
     },
     {
       href: resume,
-      color: "rgb(202, 0, 0)",
+      color: "red",
       title: "Resume",
       icon: <FaRegFilePdf size={size - 2} style={{ display: "block" }} />,
     },
@@ -199,7 +199,7 @@ export const experiences = [
     name: "Crockett Lab",
     color: "rgba(15, 77, 146, 0.5)",
     loc: "New Haven, CT",
-    link: "",
+    link: "http://www.crockettlab.org/",
     title: "Research Assistant",
     date: "February 2021 - Present",
     description:
@@ -210,7 +210,7 @@ export const experiences = [
     name: "Krishnaswamy Lab",
     color: "rgba(136, 21, 134, 0.5)",
     loc: "Remote Work",
-    link: "",
+    link: "https://www.krishnaswamylab.org/workshop",
     title: "Teaching Assistant",
     date: "January 2021",
     description:
@@ -221,7 +221,7 @@ export const experiences = [
     name: "Golden Section Technology",
     color: "rgba(253, 195, 36, 0.5)",
     loc: "Remote Work",
-    link: "",
+    link: "https://www.gstdev.com/",
     title: "Part-Time Software and DevOps Engineer",
     date: "August 2020 - Present",
     description:

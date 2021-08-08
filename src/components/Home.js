@@ -10,6 +10,7 @@ import WaterWave from "react-water-wave";
 import styled, { keyframes } from "styled-components";
 import { StyledLink } from "./styledcomponents";
 import { getSocials } from "../util/constants";
+import { trackGA } from "../util/functions";
 
 const StyledContainer = styled(Col)`
   padding: 0;
@@ -120,7 +121,7 @@ const StyledIcon = styled.a`
   &:hover {
     transform: translateY(-6px);
     cursor: pointer;
-    color: ${({ color }) => color};
+    color: ${({ color, theme }) => theme[color]};
   }
 `;
 
@@ -138,15 +139,15 @@ function Home() {
   const letters = ["M", "A", "X", "", "Y", "U", "A", "N"];
   return (
     <StyledContainer>
-      <FadeInSection>
+      <FadeInSection section="home">
         <StyledContent>
           <Col md={8} className="p-0 mb-4">
             <StyledName>
-              {letters.map((letter) =>
+              {letters.map((letter, index) =>
                 letter === "" ? (
-                  <>&nbsp;</>
+                  <React.Fragment key={index}>&nbsp;</React.Fragment>
                 ) : (
-                  <StyledLetter>{letter}</StyledLetter>
+                  <StyledLetter key={index}>{letter}</StyledLetter>
                 )
               )}
             </StyledName>
@@ -177,6 +178,7 @@ function Home() {
                 href="mailto: max.yuan@yale.edu"
                 email
                 color="rgba(50, 115, 220, 0.2)"
+                onClick={() => trackGA("Socials", "Send Email")}
               >
                 max.yuan@yale.edu
               </StyledLink>
@@ -191,6 +193,8 @@ function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                     title={social.title}
+                    key={index}
+                    onClick={() => trackGA("Socials", `Viewed ${social.title}`)}
                   >
                     {social.icon}
                   </StyledIcon>

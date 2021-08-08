@@ -3,6 +3,7 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 import FadeInSection from "./FadeInSection";
 import ThemeToggle from "./ThemeToggle";
 import styled from "styled-components";
+import { trackGA } from "../util/functions";
 
 const StyledNavbarLink = styled.div`
   margin: 0.5rem 0.5rem !important;
@@ -18,12 +19,12 @@ const StyledNavbarLink = styled.div`
 
   &:hover {
     text-decoration: none !important;
-    color: ${({ theme }) => theme.blue_color};
+    color: ${({ theme }) => theme.blue};
   }
 
   &:focus,
   &:active {
-    color: ${({ theme }) => theme.blue_color};
+    color: ${({ theme }) => theme.blue};
   }
 
   &:before {
@@ -33,7 +34,7 @@ const StyledNavbarLink = styled.div`
     top: 100%;
     height: 1px;
     width: 100%;
-    background-color: ${({ theme }) => theme.blue_color};
+    background-color: ${({ theme }) => theme.blue};
     -webkit-transform-origin: center top;
     transform-origin: center top;
     -webkit-transform: scale(0, 1);
@@ -45,7 +46,7 @@ const StyledNavbarLink = styled.div`
   }
 
   &:active:before {
-    background-color: ${({ theme }) => theme.blue_color};
+    background-color: ${({ theme }) => theme.blue};
   }
 
   &:hover:before,
@@ -89,8 +90,14 @@ function PortfolioNavbar({ theme, toggleTheme, setScroll, is_mobile }) {
                 className="justify-content-end"
               >
                 <Nav onClick={() => setExpand(false)}>
-                  {sections.map((section) => (
-                    <StyledNavbarLink onClick={() => setScroll(section)}>
+                  {sections.map((section, index) => (
+                    <StyledNavbarLink
+                      onClick={() => {
+                        trackGA("Navbar", `Goto ${section}`);
+                        setScroll(section);
+                      }}
+                      key={index}
+                    >
                       {section}
                     </StyledNavbarLink>
                   ))}

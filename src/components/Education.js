@@ -23,7 +23,7 @@ function Education() {
   return (
     <StyledSectionContainer>
       {educations.map((ed, index) => (
-        <FadeInSection>
+        <FadeInSection key={index} section={index === 0 ? "education" : null}>
           <Row className="mx-auto mb-5">
             <StyledSectionHeader md={3}>
               {index === 0 ? "EDUCATION" : ""}
@@ -53,16 +53,16 @@ function Education() {
                 </span>
               </Row>
               <Row className="mx-auto mt-1">
-                {ed.courses.map((course) => (
-                  <StyledBubble>{course}</StyledBubble>
+                {ed.courses.map((course, index) => (
+                  <StyledBubble key={index}>{course}</StyledBubble>
                 ))}
               </Row>
               <Row className="mt-2 mx-auto">
                 <span style={{ borderBottom: "1px solid" }}>Activities</span>
               </Row>
               <Row className="mx-auto mt-1">
-                {ed.activities.map((activity) => (
-                  <StyledBubble>{activity}</StyledBubble>
+                {ed.activities.map((activity, index) => (
+                  <StyledBubble key={index}>{activity}</StyledBubble>
                 ))}
               </Row>
             </Col>

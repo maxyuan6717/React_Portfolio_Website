@@ -12,6 +12,7 @@ import {
   StyledText,
 } from "./styledcomponents";
 import styled from "styled-components";
+import { trackGA } from "../util/functions";
 
 const StyledSite = styled.a`
   display: flex;
@@ -21,7 +22,7 @@ const StyledSite = styled.a`
 
   &:hover {
     cursor: pointer;
-    color: ${({ theme }) => theme.blue_color};
+    color: ${({ theme }) => theme.blue};
   }
 `;
 
@@ -39,21 +40,33 @@ function Projects({ theme }) {
   
   */
   return (
-    <StyledSectionContainer desktopBot="70" mobileBot="40">
+    <StyledSectionContainer desktopbot="70" mobilebot="40">
       <Row className={" mx-auto"}>
         <StyledSectionHeader md={3}>
-          <FadeInSection>PROJECTS</FadeInSection>
+          <FadeInSection section="projects">PROJECTS</FadeInSection>
         </StyledSectionHeader>
         <Col md={9} className="p-0">
-          {projects.map((proj) =>
-            proj.description === "TBD" ? null : (
-              <FadeInSection>
+          {projects.map((proj, index) => (
+            <FadeInSection key={index}>
+              {proj.src ? (
+                <ProjectCard
+                  img_src={proj.src}
+                  name={proj.name}
+                  github={proj.github}
+                  site={proj.site}
+                  techs={proj.tech}
+                  description={proj.description}
+                />
+              ) : (
                 <StyledText size="20">
                   <Row className="mx-auto">
                     <StyledLink
                       href={proj.github}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={() =>
+                        trackGA("Project", `Viewed ${proj.name} Github`)
+                      }
                       color={
                         theme === "dark"
                           ? "rgba(128, 35, 128, 0.6)"
@@ -67,6 +80,9 @@ function Projects({ theme }) {
                         href={proj.site}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() =>
+                          trackGA("Project", `Viewed ${proj.name} Site`)
+                        }
                       >
                         <BsLink45Deg
                           className="m-auto"
@@ -80,14 +96,14 @@ function Projects({ theme }) {
                     <StyledText size="16">{proj.description}</StyledText>
                   </Row>
                   <Row className="mx-auto mb-4">
-                    {proj.tech.map((tech) => (
-                      <StyledTech>{tech}</StyledTech>
+                    {proj.tech.map((tech, index) => (
+                      <StyledTech key={index}>{tech}</StyledTech>
                     ))}
                   </Row>
                 </StyledText>
-              </FadeInSection>
-            )
-          )}
+              )}
+            </FadeInSection>
+          ))}
         </Col>
       </Row>
     </StyledSectionContainer>
