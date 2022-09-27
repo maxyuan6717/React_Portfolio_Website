@@ -2,6 +2,7 @@ import React from "react";
 import ship_bg from "../images/ship.png";
 import coursetable_bg from "../images/coursetable.png";
 import ypost_bg from "../images/ypost.png";
+import vizathon_bg from "../images/vizathon.png";
 import nodicehelp_bg from "../images/nodicehelp.png";
 import orpheus_bg from "../images/orpheus.png";
 import wli_bg from "../images/wli.png";
@@ -12,7 +13,7 @@ import {
   FaRegFilePdf,
   FaEnvelopeOpenText,
 } from "react-icons/fa";
-import resume from "../files/Max_Yuan_Resume_Aug_2021.pdf";
+import resume from "../files/Max_Yuan_Resume_July_2022.pdf";
 
 export const getSocials = (size) => {
   return [
@@ -293,6 +294,14 @@ export const projects = [
     tech: ["ReactJS", "HTML/CSS", "Node.js", "MongoDB"],
     description:
       "Collaborated with 1 other developer to build YPost, a platform where you can send virtual holiday postcards to other Yalies. Over 800 postcards were sent within just the first 2 hours after launching, and over 11,000 postcards have been sent since.",
+  },
+  {
+    src: vizathon_bg,
+    name: "Vizathon 2021",
+    github: "https://github.com/maxyuan6717/Vizathon-2021",
+    site: "https://mj-vizathon.netlify.app/",
+    tech: ["ReactJS", "HTML/CSS", "Python", "Selenium", "Pandas"],
+    description: "",
   },
   // {
   //   src: wli_bg,
