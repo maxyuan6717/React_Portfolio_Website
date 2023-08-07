@@ -1,4 +1,5 @@
 import React from "react";
+import { CxmmunalSupport } from "./components/CxmmunalSupport";
 import PageContainer from "./components/PageContainer";
 import WindowDimensionsProvider from "./components/WindowDimensionsProvider";
 import { ThemeProvider } from "styled-components";
@@ -28,6 +29,9 @@ function App() {
                     window.location.href = "https://yale.zoom.us/j/2459116717";
                     return <div />;
                   }}
+                </Route>
+                <Route exact path="/cxmmunal">
+                  <CxmmunalSupport />
                 </Route>
                 <Route path="/">
                   <PageContainer theme={theme} toggleTheme={themeToggler} />
