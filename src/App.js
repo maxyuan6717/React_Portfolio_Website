@@ -1,5 +1,6 @@
 import React from "react";
 import { CxmmunalSupport } from "./components/CxmmunalSupport";
+import { CxmmunalPrivacy } from "./components/CxmmunalPrivacy";
 import PageContainer from "./components/PageContainer";
 import WindowDimensionsProvider from "./components/WindowDimensionsProvider";
 import { ThemeProvider } from "styled-components";
@@ -32,6 +33,9 @@ function App() {
                 </Route>
                 <Route exact path="/cxmmunal">
                   <CxmmunalSupport />
+                </Route>
+                <Route exact path="/cxmmunal-privacy">
+                  <CxmmunalPrivacy />
                 </Route>
                 <Route path="/">
                   <PageContainer theme={theme} toggleTheme={themeToggler} />
