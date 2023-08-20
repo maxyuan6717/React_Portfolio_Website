@@ -28,7 +28,7 @@ export const CxmmunalAccountDeletion = () => {
       <div>
         All data associated with your account will be deleted within 30 days of
         your request, including your name, username, phone number, location
-        data, and photos, and in-app messages.
+        data, photos, and in-app messages.
       </div>
     </Container>
   );
