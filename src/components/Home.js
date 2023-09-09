@@ -171,9 +171,8 @@ function Home() {
             </StyledRoles>
 
             <StyledAbout>
-              Hi! I'm a sophomore studying CS/Econ at Yale. If you want to
-              connect, chat, or collaborate on a project, reach out to me
-              at&nbsp;
+              Hi! I'm a senior studying CS/Econ at Yale. If you want to connect,
+              chat, or collaborate on a project, reach out to me at&nbsp;
               <StyledLink
                 href="mailto: max.yuan@yale.edu"
                 email
