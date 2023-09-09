@@ -49,22 +49,25 @@ export const educations = [
     name: "Yale University",
     loc: "New Haven, CT",
     degree: "B.S. in Computer Science and Economics",
-    gpa: "4.0",
-    date: "May 2023",
+    gpa: "3.99",
+    date: "Winter 2023",
     courses: [
       "Data Structures",
       "Systems Programming",
       "Intensive Algorithms",
       "Unsupervised Learning",
       "Deep Learning",
+      "Blockchain & Cryptocurrency",
       "Human-Computer Interaction",
       "Cybersecurity",
+      "Database Systems",
       "Game Theory",
       "Discrete Math",
       "Linear Algebra",
       "Probability & Statistics",
       "Macroeconomics",
       "Microeconomics",
+      "Econometrics",
     ],
     activities: [
       "Yale Computer Society (Lead Front-end Developer)",
@@ -89,16 +92,20 @@ export const educations = [
 export const skills = [
   [
     {
+      text: "TypeScript",
+      progress: 0.95,
+    },
+    {
+      text: "JavaScript",
+      progress: 0.95,
+    },
+    {
       text: "C/C++",
       progress: 0.9,
     },
     {
       text: "Python",
       progress: 0.87,
-    },
-    {
-      text: "JavaScript",
-      progress: 0.85,
     },
     {
       text: "HTML/CSS",
@@ -113,10 +120,6 @@ export const skills = [
       progress: 0.65,
     },
     {
-      text: "TypeScript",
-      progress: 0.6,
-    },
-    {
       text: "SQL",
       progress: 0.55,
     },
@@ -124,15 +127,15 @@ export const skills = [
   [
     {
       text: "ReactJS",
-      progress: 0.85,
-    },
-    {
-      text: "Bootstrap",
-      progress: 0.85,
+      progress: 0.95,
     },
     {
       text: "Node.js",
-      progress: 0.65,
+      progress: 0.9,
+    },
+    {
+      text: "React Native",
+      progress: 0.8,
     },
     {
       text: "PyTorch",
@@ -142,15 +145,15 @@ export const skills = [
   [
     {
       text: "Git",
-      progress: 0.9,
+      progress: 0.95,
     },
     {
       text: "REST API",
-      progress: 0.9,
+      progress: 0.95,
     },
     {
       text: "MERN Stack",
-      progress: 0.75,
+      progress: 0.95,
     },
     {
       text: "AWS",
@@ -177,6 +180,35 @@ export const skills = [
 
 export const experiences = [
   {
+    name: "Gatsby",
+    color: "rgba(58, 138, 68, 0.5)",
+    loc: "San Francisco, CA",
+    link: "https://gatsby.events/",
+    title: "Full Stack Engineer",
+    date: "August 2021 - Present",
+    description: "",
+    techs: [
+      "ReactJS",
+      "React Native",
+      "Typescript",
+      "Node.js",
+      "GraphQL",
+      "MongoDB",
+      "CI/CD",
+    ],
+  },
+  {
+    name: null,
+    color: null,
+    loc: null,
+    link: null,
+    title: "Software Engineering Intern",
+    date: "Summer 2021",
+    description:
+      "Built 20+ novel, full-stack features using TypeScript, GraphQL, and MongoDB to provide investors with an end-to-end event planning tool that cultivates meaningful relationships. Contributed 50+ pull requests and 7K+ new lines of code in 12 weeks.",
+    techs: ["ReactJS", "Typescript", "Node.js", "GraphQL", "MongoDB", "CI/CD"],
+  },
+  {
     name: "8VC",
     color: "rgba(112, 0, 255, 0.5)",
     loc: "San Francisco, CA",
@@ -188,23 +220,12 @@ export const experiences = [
     techs: [],
   },
   {
-    name: "Gatsby",
-    color: "rgba(58, 138, 68, 0.5)",
-    loc: "San Francisco, CA",
-    link: "https://gatsby.events/",
-    title: "Software Engineering Intern",
-    date: "Summer 2021",
-    description:
-      "Built 20+ novel, full-stack features using TypeScript, GraphQL, and MongoDB to provide investors with an end-to-end event planning tool that cultivates meaningful relationships. Contributed 50+ pull requests and 7K+ new lines of code in 12 weeks.",
-    techs: [],
-  },
-  {
     name: "Crockett Lab",
     color: "rgba(15, 77, 146, 0.5)",
     loc: "New Haven, CT",
     link: "http://www.crockettlab.org/",
     title: "Research Assistant",
-    date: "February 2021 - Present",
+    date: "February 2021 - May 2021",
     description:
       "Using Natural Language Processing and Neural Networks to investigate how moral outrage and hate speech are combined in online outrage expression and the impact being flamed online has on minority group members. Employing unique GAB and Twitter corpora to adapt an existing neural network for outrage detection to also detect hate speech, possibly revealing the features they share.",
     techs: ["Python", "NLP", "Neural Nets"],
@@ -226,7 +247,7 @@ export const experiences = [
     loc: "Remote Work",
     link: "https://www.gstdev.com/",
     title: "Part-Time Software and DevOps Engineer",
-    date: "August 2020 - Present",
+    date: "August 2020 - May 2021",
     description:
       "Building a proprietary Business Intelligence (BI) Dashboard to view performance and sales data for client projects. Implementing OpenID Connect (OIDC) Authentication in custom web and mobile apps for convenient single sign-on functionality. Continuing all responsibilities held during the previous internship as well.",
     techs: [
@@ -301,7 +322,8 @@ export const projects = [
     github: "https://github.com/maxyuan6717/Vizathon-2021",
     site: "https://mj-vizathon.netlify.app/",
     tech: ["ReactJS", "HTML/CSS", "Python", "Selenium", "Pandas"],
-    description: "",
+    description:
+      "Created a data visualization that analyzes the rise of anti-asian hate during the COVID-19 pandemic. Won the award for the most aesthetic data visualizations at Vizathon 2021. https://devpost.com/software/social-media-agent-of-transmission",
   },
   // {
   //   src: wli_bg,

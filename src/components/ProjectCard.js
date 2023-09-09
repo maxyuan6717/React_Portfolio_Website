@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { BsLink45Deg } from "react-icons/bs";
 import { StyledTech } from "./styledcomponents";
 import { trackGA } from "../util/functions";
+import { useWindowDimensions } from "./WindowDimensionsProvider";
 
 const StyledCard = styled.div`
   width: ${({ width }) => `${width}px`};
@@ -38,6 +39,12 @@ const StyledCard = styled.div`
     font-weight: 600;
     transition: opacity 0.3s;
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      font-size: 10px;
+    }
   }
 
   &:hover {
@@ -84,7 +91,9 @@ const StyledMeta = styled.div`
 `;
 
 const ProjectCard = ({ img_src, name, github, site, techs, description }) => {
-  const width = 550;
+  const { width: pageWidth } = useWindowDimensions();
+  const width = pageWidth < 768 ? pageWidth - 20 : 550;
+
   return (
     <StyledCard src={img_src} width={width} height={(width * 10.5) / 20}>
       {/* <div className="flipcard">
