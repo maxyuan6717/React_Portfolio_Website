@@ -60,7 +60,7 @@ const StyledNavbarLink = styled.div`
 
 function PortfolioNavbar({ theme, toggleTheme, setScroll, is_mobile }) {
   const [nav_expanded, setExpand] = useState(false);
-  const sections = ["education", "skills", "experience", "projects"];
+  const sections = ["education", "experience", "projects"];
 
   return (
     <div>

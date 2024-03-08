@@ -35,12 +35,12 @@ export const getSocials = (size) => {
       title: "LinkedIn",
       icon: <FaLinkedinIn size={size} style={{ display: "block" }} />,
     },
-    {
-      href: resume,
-      color: "red",
-      title: "Resume",
-      icon: <FaRegFilePdf size={size - 2} style={{ display: "block" }} />,
-    },
+    // {
+    //   href: resume,
+    //   color: "red",
+    //   title: "Resume",
+    //   icon: <FaRegFilePdf size={size - 2} style={{ display: "block" }} />,
+    // },
   ];
 };
 
@@ -61,7 +61,7 @@ export const educations = [
       "Human-Computer Interaction",
       "Cybersecurity",
       "Database Systems",
-      "Game Theory",
+      "Mathematical Game Theory",
       "Discrete Math",
       "Linear Algebra",
       "Probability & Statistics",
@@ -190,11 +190,14 @@ export const experiences = [
     techs: [
       "ReactJS",
       "React Native",
-      "Typescript",
       "Node.js",
+      "Typescript",
+      "Swift",
+      "Kotlin",
       "GraphQL",
       "MongoDB",
       "CI/CD",
+      "Cloudflare",
     ],
   },
   {
@@ -205,7 +208,7 @@ export const experiences = [
     title: "Software Engineering Intern",
     date: "Summer 2021",
     description:
-      "Built 20+ novel, full-stack features using TypeScript, GraphQL, and MongoDB to provide investors with an end-to-end event planning tool that cultivates meaningful relationships. Contributed 50+ pull requests and 7K+ new lines of code in 12 weeks.",
+      "Built 20+ novel, full-stack features using TypeScript, GraphQL, and MongoDB to provide investors with an end-to-end event planning tool that cultivates meaningful relationships.",
     techs: ["ReactJS", "Typescript", "Node.js", "GraphQL", "MongoDB", "CI/CD"],
   },
   {

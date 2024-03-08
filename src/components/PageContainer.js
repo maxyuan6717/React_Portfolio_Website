@@ -86,9 +86,9 @@ function PageContainer({ theme, toggleTheme }) {
         <Element name="education">
           <Education />
         </Element>
-        <Element name="skills">
+        {/* <Element name="skills">
           <Skills theme={theme} />
-        </Element>
+        </Element> */}
         <Element name="experience">
           <Experience />
         </Element>

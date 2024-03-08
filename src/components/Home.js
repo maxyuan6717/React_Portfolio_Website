@@ -211,6 +211,7 @@ function Home() {
                   width: "200px",
                   height: "200px",
                 }}
+                interactive={false}
               />
             </StyledAvatar>
           </Col>
